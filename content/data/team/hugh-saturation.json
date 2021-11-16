@@ -1,0 +1,13 @@
+{
+    "type": "Person",
+    "id": "hugh-saturation",
+    "firstName": "Hugh",
+    "lastName": "Saturation",
+    "role": "Head Fisherman & Finance",
+    "bio": "This feature is the thing you were missing in your workflow, thank god we have it for you to use.",
+    "image": {
+        "type": "ImageBlock",
+        "url": "/images/hugh-saturation.jpg",
+        "altText": "Person photo"
+    }
+}

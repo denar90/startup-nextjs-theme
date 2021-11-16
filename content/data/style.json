@@ -1,0 +1,54 @@
+{
+    "type": "ThemeStyle",
+    "h1": {
+        "weight": "bold",
+        "decoration": "none",
+        "case": "none",
+        "letterSpacing": "0.025em"
+    },
+    "h2": {
+        "weight": "bold",
+        "decoration": "none",
+        "case": "none",
+        "letterSpacing": "0.025em"
+    },
+    "h3": {
+        "weight": "bold",
+        "decoration": "none",
+        "case": "none",
+        "letterSpacing": "0.025em"
+    },
+    "fontBody": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "fontHeadlines": "ui-serif, Georgia, Cambria, \"Times New Roman\", Times, serif",
+    "body": "#000000",
+    "headlines": "#000000",
+    "primary": "#344FF1",
+    "primaryContent": "#ffffff",
+    "secondary": "#F6F1ED",
+    "secondaryContent": "#000000",
+    "neutral": "#282828",
+    "neutralContent": "#ffffff",
+    "complementary": "#FAF0B4",
+    "complementaryContent": "#000000",
+    "complementaryAlt": "#EDF2F6",
+    "complementaryAltContent": "#000000",
+    "buttonPrimary": {
+        "weight": "normal",
+        "case": "uppercase",
+        "letterSpacing": "0.1em",
+        "borderRadius": "0.5rem",
+        "horizontalPadding": 30,
+        "verticalPadding": 12,
+        "shadow": "none"
+    },
+    "buttonSecondary": {
+        "weight": "normal",
+        "case": "uppercase",
+        "letterSpacing": "normal",
+        "borderRadius": "0.5rem",
+        "borderStyle": "solid",
+        "horizontalPadding": 30,
+        "verticalPadding": 12,
+        "shadow": "none"
+    }
+}
