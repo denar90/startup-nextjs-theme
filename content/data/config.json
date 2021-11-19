@@ -1,7 +1,7 @@
 {
     "type": "Config",
     "header": {
-        "headerVariant": "variant-b",
+        "headerVariant": "variant-c",
         "primaryColors": "colors-f",
         "secondaryColors": "colors-f",
         "title": "Startup.io",
@@ -15,8 +15,8 @@
             },
             {
                 "type": "Link",
-                "label": "Blog",
-                "url": "/blog",
+                "label": "Carrers",
+                "url": "/carrers",
                 "altText": ""
             }
         ],
