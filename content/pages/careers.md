@@ -1,5 +1,5 @@
 ---
-title: Carrers
+title: Careers
 layout: PageLayout
 sections:
   - elementId: ''
@@ -92,7 +92,7 @@ sections:
   - elementId: ''
     colors: colors-a
     text: |
-      ![carrers](/images/carrers.jpg)
+      ![carrers](/images/careers.jpg)
     styles:
       self:
         height: auto
