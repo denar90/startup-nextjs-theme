@@ -102,13 +102,13 @@ sections:
         justifyContent: center
         flexDirection: row
       title:
-        fontWeight: 700
+        fontWeight: '700'
         fontStyle: normal
         textAlign: left
         margin:
           - mb-6
       subtitle:
-        fontWeight: 400
+        fontWeight: '400'
         fontStyle: normal
         textAlign: left
       text:
@@ -148,7 +148,7 @@ sections:
     spacing: 3
     columns: '7'
     aspectRatio: '1:1'
-    imageSizePx: 300
+    imageSizePx: '300'
     showCaption: false
     enableHover: false
     styles:
@@ -169,14 +169,14 @@ sections:
         borderStyle: none
         borderColor: border-dark
       title:
-        fontWeight: 700
+        fontWeight: '700'
         fontStyle: normal
         textAlign: center
         margin:
           - mt-0
           - mb-2
       subtitle:
-        fontWeight: 400
+        fontWeight: '400'
         fontStyle: normal
         textAlign: center
         margin:
@@ -206,14 +206,14 @@ sections:
           type: ImageBlock
         styles:
           title:
-            fontWeight: 700
+            fontWeight: '700'
             fontStyle: normal
             textAlign: center
             margin:
               - mt-4
               - mb-4
           text:
-            fontWeight: 400
+            fontWeight: '400'
             fontStyle: normal
             textAlign: center
       - type: ItemBlock
@@ -232,14 +232,14 @@ sections:
           type: ImageBlock
         styles:
           title:
-            fontWeight: 700
+            fontWeight: '700'
             fontStyle: normal
             textAlign: center
             margin:
               - mt-4
               - mb-4
           text:
-            fontWeight: 400
+            fontWeight: '400'
             fontStyle: normal
             textAlign: center
       - type: ItemBlock
@@ -258,14 +258,14 @@ sections:
           type: ImageBlock
         styles:
           title:
-            fontWeight: 700
+            fontWeight: '700'
             fontStyle: normal
             textAlign: center
             margin:
               - mt-4
               - mb-4
           text:
-            fontWeight: 400
+            fontWeight: '400'
             fontStyle: normal
             textAlign: center
     columns: 3
@@ -289,14 +289,14 @@ sections:
         borderStyle: none
         borderColor: border-dark
       title:
-        fontWeight: 700
+        fontWeight: '700'
         fontStyle: normal
         textAlign: center
         margin:
           - mt-0
           - mb-4
       subtitle:
-        fontWeight: 400
+        fontWeight: '400'
         fontStyle: normal
         textAlign: center
         margin:
@@ -334,13 +334,13 @@ sections:
         borderWidth: 0
         borderStyle: solid
       title:
-        fontWeight: 700
+        fontWeight: '700'
         fontStyle: normal
         textAlign: left
         margin:
           - mb-6
       subtitle:
-        fontWeight: 400
+        fontWeight: '400'
         fontStyle: normal
         textAlign: left
       text:
@@ -374,13 +374,13 @@ sections:
         justifyContent: center
         flexDirection: row-reverse
       title:
-        fontWeight: 700
+        fontWeight: '700'
         fontStyle: normal
         textAlign: left
         margin:
           - mb-6
       subtitle:
-        fontWeight: 400
+        fontWeight: '400'
         fontStyle: normal
         textAlign: left
       text:
@@ -416,14 +416,14 @@ sections:
         borderStyle: none
         borderColor: border-dark
       title:
-        fontWeight: 700
+        fontWeight: '700'
         fontStyle: normal
         textAlign: left
         margin:
           - mt-0
           - mb-2
       subtitle:
-        fontWeight: 400
+        fontWeight: '400'
         fontStyle: normal
         textAlign: center
         margin:
@@ -461,14 +461,14 @@ sections:
         borderStyle: none
         borderColor: border-dark
       title:
-        fontWeight: 700
+        fontWeight: '700'
         fontStyle: normal
         textAlign: center
         margin:
           - mt-0
           - mb-2
       subtitle:
-        fontWeight: 400
+        fontWeight: '400'
         fontStyle: normal
         textAlign: center
         margin:
@@ -487,14 +487,14 @@ sections:
           At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation
         styles:
           title:
-            fontWeight: 700
+            fontWeight: '700'
             fontStyle: normal
             textAlign: left
             margin:
               - mt-4
               - mb-4
           text:
-            fontWeight: 400
+            fontWeight: '400'
             fontStyle: normal
             textAlign: left
       - type: ItemBlock
@@ -503,14 +503,14 @@ sections:
           At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation
         styles:
           title:
-            fontWeight: 700
+            fontWeight: '700'
             fontStyle: normal
             textAlign: left
             margin:
               - mt-4
               - mb-4
           text:
-            fontWeight: 400
+            fontWeight: '400'
             fontStyle: normal
             textAlign: left
       - type: ItemBlock
@@ -519,14 +519,14 @@ sections:
           At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation
         styles:
           title:
-            fontWeight: 700
+            fontWeight: '700'
             fontStyle: normal
             textAlign: left
             margin:
               - mt-4
               - mb-4
           text:
-            fontWeight: 400
+            fontWeight: '400'
             fontStyle: normal
             textAlign: left
       - type: ItemBlock
@@ -535,14 +535,14 @@ sections:
           At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation
         styles:
           title:
-            fontWeight: 700
+            fontWeight: '700'
             fontStyle: normal
             textAlign: left
             margin:
               - mt-4
               - mb-4
           text:
-            fontWeight: 400
+            fontWeight: '400'
             fontStyle: normal
             textAlign: left
     columns: 2
@@ -566,14 +566,14 @@ sections:
         borderStyle: none
         borderColor: border-dark
       title:
-        fontWeight: 700
+        fontWeight: '700'
         fontStyle: normal
         textAlign: center
         margin:
           - mt-0
           - mb-24
       subtitle:
-        fontWeight: 400
+        fontWeight: '400'
         fontStyle: normal
         textAlign: center
         margin:
@@ -603,11 +603,11 @@ sections:
           quote:
             textAlign: left
           name:
-            fontWeight: 400
+            fontWeight: '400'
             fontStyle: normal
             textAlign: left
           title:
-            fontWeight: 400
+            fontWeight: '400'
             fontStyle: normal
             textAlign: left
     styles:
@@ -625,11 +625,11 @@ sections:
         alignItems: left
         justifyContent: center
       title:
-        fontWeight: 700
+        fontWeight: '700'
         fontStyle: normal
         textAlign: left
       subtitle:
-        fontWeight: 400
+        fontWeight: '400'
         fontStyle: normal
         textAlign: left
     type: TestimonialsSection

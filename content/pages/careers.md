@@ -28,7 +28,7 @@ sections:
         justifyContent: center
         flexDirection: col
       title:
-        fontWeight: 700
+        fontWeight: '700'
         fontStyle: normal
         textAlign: center
         margin:
