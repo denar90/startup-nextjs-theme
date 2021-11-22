@@ -43,28 +43,15 @@ sections:
         borderStyle: none
         borderColor: border-dark
       title:
-        fontWeight: '700'
-        fontStyle: normal
         textAlign: left
-        margin:
-          - mt-0
-          - mb-6
       subtitle:
-        fontWeight: '400'
-        fontStyle: normal
         textAlign: left
-        margin:
-          - mt-0
-          - mb-6
       text:
         textAlign: left
-        margin:
-          - mt-0
-          - mb-8
       actions:
         justifyContent: flex-start
   - elementId: ''
-    colors: colors-e
+    colors: colors-f
     title: Where did everyone go?
     text: >
       Learn how top tech companies have learned working remote using our
@@ -102,21 +89,15 @@ sections:
         justifyContent: center
         flexDirection: row
       title:
-        fontWeight: '700'
-        fontStyle: normal
         textAlign: left
-        margin:
-          - mb-6
       subtitle:
-        fontWeight: '400'
-        fontStyle: normal
         textAlign: left
       text:
         textAlign: left
       actions:
         justifyContent: flex-start
     type: HeroSection
-  - colors: colors-f
+  - colors: colors-h
     elementId: ''
     images:
       - type: ImageBlock
@@ -135,20 +116,21 @@ sections:
         url: /images/gatsby.svg
         altText: image alt text
         caption: image caption
-      - url: /images/xbox.svg
+      - type: ImageBlock
+        url: /images/xbox.svg
         altText: altText of the image
         caption: Caption of the image
-      - url: /images/skype.svg
+      - type: ImageBlock
+        url: /images/skype.svg
         altText: altText of the image
         caption: Caption of the image
-        type: ImageBlock
-      - url: /images/zcool.svg
+      - type: ImageBlock
+        url: /images/zcool.svg
         altText: altText of the image
         caption: Caption of the image
     spacing: 3
-    columns: '7'
-    aspectRatio: '1:1'
-    imageSizePx: '300'
+    columns: 7
+    aspectRatio: 'auto'
     showCaption: false
     enableHover: false
     styles:
@@ -169,21 +151,12 @@ sections:
         borderStyle: none
         borderColor: border-dark
       title:
-        fontWeight: '700'
-        fontStyle: normal
         textAlign: center
-        margin:
-          - mt-0
-          - mb-2
       subtitle:
-        fontWeight: '400'
-        fontStyle: normal
         textAlign: center
-        margin:
-          - mt-0
-          - mb-12
+    imageSizePx: 240
     type: MediaGallerySection
-  - colors: colors-f
+  - colors: colors-h
     elementId: ''
     title: Remote doesn’t mean alone. Here are so great features
     subtitle: >-
@@ -206,15 +179,8 @@ sections:
           type: ImageBlock
         styles:
           title:
-            fontWeight: '700'
-            fontStyle: normal
             textAlign: center
-            margin:
-              - mt-4
-              - mb-4
           text:
-            fontWeight: '400'
-            fontStyle: normal
             textAlign: center
       - type: ItemBlock
         title: Smarter
@@ -232,15 +198,8 @@ sections:
           type: ImageBlock
         styles:
           title:
-            fontWeight: '700'
-            fontStyle: normal
             textAlign: center
-            margin:
-              - mt-4
-              - mb-4
           text:
-            fontWeight: '400'
-            fontStyle: normal
             textAlign: center
       - type: ItemBlock
         title: Focused
@@ -258,15 +217,8 @@ sections:
           type: ImageBlock
         styles:
           title:
-            fontWeight: '700'
-            fontStyle: normal
             textAlign: center
-            margin:
-              - mt-4
-              - mb-4
           text:
-            fontWeight: '400'
-            fontStyle: normal
             textAlign: center
     columns: 3
     styles:
@@ -289,19 +241,9 @@ sections:
         borderStyle: none
         borderColor: border-dark
       title:
-        fontWeight: '700'
-        fontStyle: normal
         textAlign: center
-        margin:
-          - mt-0
-          - mb-4
       subtitle:
-        fontWeight: '400'
-        fontStyle: normal
         textAlign: center
-        margin:
-          - mt-12
-          - mb-12
       actions:
         justifyContent: flex-start
     type: FeaturedItemsSection
@@ -313,7 +255,7 @@ sections:
       together
     feature:
       type: ImageBlock
-      url: /images/hero-1.png
+      url: /images/Image-on-the-right.svg
       altText: Hero section image
     styles:
       self:
@@ -334,14 +276,8 @@ sections:
         borderWidth: 0
         borderStyle: solid
       title:
-        fontWeight: '700'
-        fontStyle: normal
         textAlign: left
-        margin:
-          - mb-6
       subtitle:
-        fontWeight: '400'
-        fontStyle: normal
         textAlign: left
       text:
         textAlign: left
@@ -356,7 +292,7 @@ sections:
       together
     feature:
       type: ImageBlock
-      url: /images/hero-2.png
+      url: /images/Image-on-the-left.svg
       altText: Hero section image
     styles:
       self:
@@ -374,14 +310,8 @@ sections:
         justifyContent: center
         flexDirection: row-reverse
       title:
-        fontWeight: '700'
-        fontStyle: normal
         textAlign: left
-        margin:
-          - mb-6
       subtitle:
-        fontWeight: '400'
-        fontStyle: normal
         textAlign: left
       text:
         textAlign: left
@@ -416,24 +346,11 @@ sections:
         borderStyle: none
         borderColor: border-dark
       title:
-        fontWeight: '700'
-        fontStyle: normal
         textAlign: left
-        margin:
-          - mt-0
-          - mb-2
       subtitle:
-        fontWeight: '400'
-        fontStyle: normal
         textAlign: center
-        margin:
-          - mt-0
-          - mb-6
       text:
         textAlign: left
-        margin:
-          - mt-0
-          - mb-0
     type: TextSection
   - elementId: ''
     variant: variant-b
@@ -461,23 +378,13 @@ sections:
         borderStyle: none
         borderColor: border-dark
       title:
-        fontWeight: '700'
-        fontStyle: normal
         textAlign: center
-        margin:
-          - mt-0
-          - mb-2
       subtitle:
-        fontWeight: '400'
-        fontStyle: normal
         textAlign: center
-        margin:
-          - mt-0
-          - mb-12
       actions:
         justifyContent: center
     type: FeaturedPostsSection
-  - colors: colors-e
+  - colors: colors-f
     elementId: ''
     title: Need Answers?
     items:
@@ -487,15 +394,8 @@ sections:
           At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation
         styles:
           title:
-            fontWeight: '700'
-            fontStyle: normal
             textAlign: left
-            margin:
-              - mt-4
-              - mb-4
           text:
-            fontWeight: '400'
-            fontStyle: normal
             textAlign: left
       - type: ItemBlock
         title: How it this different from what we have today?
@@ -503,15 +403,8 @@ sections:
           At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation
         styles:
           title:
-            fontWeight: '700'
-            fontStyle: normal
             textAlign: left
-            margin:
-              - mt-4
-              - mb-4
           text:
-            fontWeight: '400'
-            fontStyle: normal
             textAlign: left
       - type: ItemBlock
         title: How it this different from what we have today?
@@ -519,15 +412,8 @@ sections:
           At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation
         styles:
           title:
-            fontWeight: '700'
-            fontStyle: normal
             textAlign: left
-            margin:
-              - mt-4
-              - mb-4
           text:
-            fontWeight: '400'
-            fontStyle: normal
             textAlign: left
       - type: ItemBlock
         title: How it this different from what we have today?
@@ -535,15 +421,8 @@ sections:
           At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation
         styles:
           title:
-            fontWeight: '700'
-            fontStyle: normal
             textAlign: left
-            margin:
-              - mt-4
-              - mb-4
           text:
-            fontWeight: '400'
-            fontStyle: normal
             textAlign: left
     columns: 2
     styles:
@@ -566,19 +445,9 @@ sections:
         borderStyle: none
         borderColor: border-dark
       title:
-        fontWeight: '700'
-        fontStyle: normal
         textAlign: center
-        margin:
-          - mt-0
-          - mb-24
       subtitle:
-        fontWeight: '400'
-        fontStyle: normal
         textAlign: center
-        margin:
-          - mt-12
-          - mb-12
       actions:
         justifyContent: flex-start
     type: FeaturedItemsSection
@@ -603,12 +472,8 @@ sections:
           quote:
             textAlign: left
           name:
-            fontWeight: '400'
-            fontStyle: normal
             textAlign: left
           title:
-            fontWeight: '400'
-            fontStyle: normal
             textAlign: left
     styles:
       self:
@@ -622,19 +487,14 @@ sections:
           - pb-28
           - pl-4
           - pr-4
-        alignItems: left
         justifyContent: center
       title:
-        fontWeight: '700'
-        fontStyle: normal
         textAlign: left
       subtitle:
-        fontWeight: '400'
-        fontStyle: normal
         textAlign: left
     type: TestimonialsSection
   - type: ContactSection
-    colors: colors-e
+    colors: colors-f
     title: Get early access
     text: >
       Sign up your team today to be the first to try out our new product to
@@ -645,9 +505,9 @@ sections:
       destination: ''
       action: /.netlify/functions/submission_created
       fields:
-        - name: your-email
+        - name: email
           placeholder: Your email
-          isRequired: false
+          isRequired: true
           width: full
           type: EmailFormControl
       submitLabel: Sign Up
@@ -673,15 +533,7 @@ sections:
         borderStyle: none
         borderColor: border-dark
       title:
-        fontWeight: '700'
-        fontStyle: normal
         textAlign: left
-        margin:
-          - mt-0
-          - mb-6
       text:
         textAlign: left
-        margin:
-          - mt-0
-          - mb-8
 ---
