@@ -6,7 +6,7 @@ sections:
     colors: colors-f
     title: We’re growing fast
     subtitle: You should join us.
-    feature:
+    media:
       type: ImageBlock
       url: /images/hero-4.jpg
       altText: Hero section image

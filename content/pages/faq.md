@@ -2,68 +2,41 @@
 title: FAQ
 layout: PageLayout
 sections:
-  - colors: colors-a
+  - colors: colors-i
     elementId: ''
-    title: Need Answers?
+    title: Frequently Asked Questions
+    subtitle: The section subtitle
     items:
-      - type: ItemBlock
-        title: How it this different from what we have today?
-        text: >
-          At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation
-        styles:
-          title:
-            textAlign: left
-          text:
-            textAlign: left
-      - type: ItemBlock
-        title: How it this different from what we have today?
-        text: >
-          At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation
-        styles:
-          title:
-            textAlign: left
-          text:
-            textAlign: left
-      - type: ItemBlock
-        title: How it this different from what we have today?
-        text: >
-          At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation
-        styles:
-          title:
-            textAlign: left
-          text:
-            textAlign: left
-      - type: ItemBlock
-        title: How it this different from what we have today?
-        text: >
-          At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation
-        styles:
-          title:
-            textAlign: left
-          text:
-            textAlign: left
-      - type: ItemBlock
-        title: How it this different from what we have today?
-        text: >
-          At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation
-        styles:
-          title:
-            textAlign: left
-          text:
-            textAlign: left
-    columns: 1
+      - question: How it this different from what we have today?
+        answer: >-
+          At the office, working together is often a distruction, on remote, it
+          could be motivation, At the office, working together is often a
+          distruction, on remote, it could be motivation, At the office, working
+          together is often a distruction, on remote, it could be motivation
+      - question: How it this different from what we have today?
+        answer: >-
+          At the office, working together is often a distruction, on remote, it
+          could be motivation, At the office, working together is often a
+          distruction, on remote, it could be motivation, At the office, working
+          together is often a distruction, on remote, it could be motivation
+      - question: How it this different from what we have today?
+        answer: >-
+          At the office, working together is often a distruction, on remote, it
+          could be motivation, At the office, working together is often a
+          distruction, on remote, it could be motivation, At the office, working
+          together is often a distruction, on remote, it could be motivation
     styles:
       self:
         height: auto
-        width: narrow
+        width: wide
         margin:
           - mt-0
           - mb-0
           - ml-0
           - mr-0
         padding:
-          - pt-28
-          - pb-28
+          - pt-12
+          - pb-12
           - pl-4
           - pr-4
         justifyContent: center
@@ -72,14 +45,16 @@ sections:
         borderStyle: none
         borderColor: border-dark
       title:
-        textAlign: left
+        textAlign: center
       subtitle:
-        textAlign: left
+        fontWeight: 400
+        fontStyle: normal
+        textAlign: center
       actions:
-        justifyContent: flex-start
-    type: FeaturedItemsSection
+        justifyContent: center
+    type: FaqSection
   - elementId: ''
-    title: 'Recent posts'
+    title: Recent posts
     variant: variant-b
     colors: colors-a
     posts:
@@ -128,7 +103,7 @@ sections:
         style: link
         showIcon: true
         icon: arrowRight
-    feature:
+    media:
       type: ImageBlock
       url: /images/hero-3.jpg
       altText: Hero section image

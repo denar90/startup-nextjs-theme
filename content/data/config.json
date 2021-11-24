@@ -21,8 +21,14 @@
             },
             {
                 "type": "Link",
-                "label": "Faq",
+                "label": "FAQ",
                 "url": "/faq",
+                "altText": ""
+            },
+            {
+                "label": "Blog",
+                "altText": "Blog",
+                "url": "/blog",
                 "altText": ""
             }
         ],
@@ -38,13 +44,20 @@
         "styles": {
             "self": {
                 "width": "narrow",
-                "padding": [
-                    "pt-5",
-                    "pb-5",
-                    "pr-4",
-                    "pl-4"
-                ]
+                "padding": ["pt-5", "pb-5", "pr-4", "pl-4"]
             }
+        },
+        "logo": {
+            "altText": "altText of the image",
+            "caption": "Caption of the image",
+            "elementId": "",
+            "styles": {
+                "self": {
+                    "opacity": 100
+                }
+            },
+            "type": "ImageBlock",
+            "url": "/favicon.svg"
         }
     },
     "footer": {
@@ -123,12 +136,7 @@
         "styles": {
             "self": {
                 "width": "narrow",
-                "padding": [
-                    "pt-16",
-                    "pb-16",
-                    "pr-4",
-                    "pl-4"
-                ]
+                "padding": ["pt-16", "pb-16", "pr-4", "pl-4"]
             }
         }
     }
