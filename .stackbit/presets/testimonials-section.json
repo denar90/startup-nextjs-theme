@@ -1,96 +1,61 @@
 {
     "model": "TestimonialsSection",
-    "presets": [{
-            "label": "Light image bottom, with title",
+    "presets": [
+        {
+            "label": "Light image right, with title",
             "thumbnail": "images/testimonials-light1.png",
             "data": {
-                "colors": "colors-a",
+                "colors": "colors-h",
                 "title": "Testimonials",
                 "subtitle": "What our customers say about us",
                 "testimonials": [
                     {
-                        "quote": "It’s great to see someone taking action while still maintaining a sustainable fish supply to home cooks.",
-                        "name": "Isabelle Parks",
-                        "title": "Head chef at The Cook",
+                        "quote": "\"Very professional team. I loved working with the people at startup.io.\"\n",
+                        "name": "Johnna Doe",
+                        "title": "Product Marketing Manager at Acme",
                         "image": {
                             "type": "ImageBlock",
-                            "url": "https://assets.stackbit.com/components/images/default/default-person.png",
-                            "altText": "Person photo"
+                            "url": "/images/carla.jpg",
+                            "altText": "Photo of Johnna Doe"
                         },
                         "styles": {
                             "self": {
                                 "margin": ["mt-0", "mb-0"],
-                                "flexDirection": "col"
+                                "flexDirection": "row"
                             },
                             "quote": {
-                                "textAlign": "center"
+                                "textAlign": "left"
                             },
                             "name": {
-                                "fontWeight": 400,
-                                "fontStyle": "normal",
-                                "textAlign": "center"
+                                "textAlign": "left"
                             },
                             "title": {
-                                "fontWeight": 400,
-                                "fontStyle": "normal",
-                                "textAlign": "center"
+                                "textAlign": "left"
                             }
                         }
-                    }
-                ],
-                "styles": {
-                    "self": {
-                        "height": "auto",
-                        "width": "wide",
-                        "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
-                        "padding": ["pt-12", "pb-12", "pl-4", "pr-4"],
-                        "justifyContent": "center"
                     },
-                    "title": {
-                        "textAlign": "center"
-                    },
-                    "subtitle": {
-                        "fontWeight": 400,
-                        "fontStyle": "normal",
-                        "textAlign": "center"
-                    }
-                }
-            }
-        },
-        {
-            "label": "Light image left, with title",
-            "thumbnail": "images/testimonials-light2.png",
-            "data": {
-                "colors": "colors-a",
-                "title": "Testimonials",
-                "subtitle": "What our customers say about us",
-                "testimonials": [
                     {
-                        "quote": "It’s great to see someone taking action while still maintaining a sustainable fish supply to home cooks.",
-                        "name": "Isabelle Parks",
-                        "title": "Head chef at The Cook",
+                        "quote": "\"It's great to see someone taking acion while still maintaining a sustainable fish supply to home cooks.\"\n",
+                        "name": "Hugh Saturation",
+                        "title": "Creative at Acme",
                         "image": {
                             "type": "ImageBlock",
-                            "url": "https://assets.stackbit.com/components/images/default/default-person.png",
-                            "altText": "Person photo"
+                            "url": "/images/hugh-saturation.jpg",
+                            "altText": "Photo of Johnna Doe"
                         },
                         "styles": {
                             "self": {
                                 "margin": ["mt-0", "mb-0"],
-                                "flexDirection": "row-reverse"
+                                "flexDirection": "row"
                             },
                             "quote": {
-                                "textAlign": "center"
+                                "textAlign": "left"
                             },
                             "name": {
-                                "fontWeight": 400,
-                                "fontStyle": "normal",
-                                "textAlign": "center"
+                                "textAlign": "left"
                             },
                             "title": {
-                                "fontWeight": 400,
-                                "fontStyle": "normal",
-                                "textAlign": "center"
+                                "textAlign": "left"
                             }
                         }
                     }
@@ -98,74 +63,15 @@
                 "styles": {
                     "self": {
                         "height": "auto",
-                        "width": "wide",
-                        "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
-                        "padding": ["pt-12", "pb-12", "pl-4", "pr-4"],
+                        "width": "narrow",
+                        "margin": ["mt-0", "mb-0"],
+                        "padding": ["pt-28", "pb-28", "pl-4", "pr-4"],
                         "justifyContent": "center"
                     },
                     "title": {
                         "textAlign": "center"
                     },
                     "subtitle": {
-                        "fontWeight": 400,
-                        "fontStyle": "normal",
-                        "textAlign": "center"
-                    }
-                }
-            }
-        },
-        {
-            "label": "Dark image bottom, without title",
-            "thumbnail": "images/testimonials-dark1.png",
-            "data": {
-                "colors": "colors-c",
-                "title": "",
-                "subtitle": "",
-                "testimonials": [
-                    {
-                        "quote": "It’s great to see someone taking action while still maintaining a sustainable fish supply to home cooks.",
-                        "name": "Isabelle Parks",
-                        "title": "Head chef at The Cook",
-                        "image": {
-                            "type": "ImageBlock",
-                            "url": "https://assets.stackbit.com/components/images/default/default-person.png",
-                            "altText": "Person photo"
-                        },
-                        "styles": {
-                            "self": {
-                                "margin": ["mt-0", "mb-0"],
-                                "flexDirection": "col"
-                            },
-                            "quote": {
-                                "textAlign": "center"
-                            },
-                            "name": {
-                                "fontWeight": 400,
-                                "fontStyle": "normal",
-                                "textAlign": "center"
-                            },
-                            "title": {
-                                "fontWeight": 400,
-                                "fontStyle": "normal",
-                                "textAlign": "center"
-                            }
-                        }
-                    }
-                ],
-                "styles": {
-                    "self": {
-                        "height": "auto",
-                        "width": "wide",
-                        "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
-                        "padding": ["pt-12", "pb-12", "pl-4", "pr-4"],
-                        "justifyContent": "center"
-                    },
-                    "title": {
-                        "textAlign": "center"
-                    },
-                    "subtitle": {
-                        "fontWeight": 400,
-                        "fontStyle": "normal",
                         "textAlign": "center"
                     }
                 }
@@ -173,20 +79,18 @@
         },
         {
             "label": "Dark image left, without title",
-            "thumbnail": "images/testimonials-dark2.png",
+            "thumbnail": "images/testimonials-dark1.png",
             "data": {
-                "colors": "colors-c",
-                "title": "",
-                "subtitle": "",
+                "colors": "colors-f",
                 "testimonials": [
                     {
-                        "quote": "It’s great to see someone taking action while still maintaining a sustainable fish supply to home cooks.",
-                        "name": "Isabelle Parks",
-                        "title": "Head chef at The Cook",
+                        "quote": "\"Very professional team. I loved working with the people at startup.io.\"\n",
+                        "name": "Johnna Doe",
+                        "title": "Product Marketing Manager at Acme",
                         "image": {
                             "type": "ImageBlock",
-                            "url": "https://assets.stackbit.com/components/images/default/default-person.png",
-                            "altText": "Person photo"
+                            "url": "/images/carla.jpg",
+                            "altText": "Photo of Johnna Doe"
                         },
                         "styles": {
                             "self": {
@@ -197,13 +101,34 @@
                                 "textAlign": "center"
                             },
                             "name": {
-                                "fontWeight": 400,
-                                "fontStyle": "normal",
                                 "textAlign": "center"
                             },
                             "title": {
-                                "fontWeight": 400,
-                                "fontStyle": "normal",
+                                "textAlign": "center"
+                            }
+                        }
+                    },
+                    {
+                        "quote": "\"It's great to see someone taking acion while still maintaining a sustainable fish supply to home cooks.\"\n",
+                        "name": "Hugh Saturation",
+                        "title": "Creative at Acme",
+                        "image": {
+                            "type": "ImageBlock",
+                            "url": "/images/hugh-saturation.jpg",
+                            "altText": "Photo of Johnna Doe"
+                        },
+                        "styles": {
+                            "self": {
+                                "margin": ["mt-0", "mb-0"],
+                                "flexDirection": "row-reverse"
+                            },
+                            "quote": {
+                                "textAlign": "center"
+                            },
+                            "name": {
+                                "textAlign": "center"
+                            },
+                            "title": {
                                 "textAlign": "center"
                             }
                         }
@@ -213,16 +138,91 @@
                     "self": {
                         "height": "auto",
                         "width": "wide",
-                        "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
-                        "padding": ["pt-12", "pb-12", "pl-4", "pr-4"],
+                        "margin": ["mt-0", "mb-0"],
+                        "padding": ["pt-28", "pb-28", "pl-4", "pr-4"],
                         "justifyContent": "center"
                     },
                     "title": {
                         "textAlign": "center"
                     },
                     "subtitle": {
-                        "fontWeight": 400,
-                        "fontStyle": "normal",
+                        "textAlign": "center"
+                    }
+                }
+            }
+        },
+
+        {
+            "label": "Light image bottom, with title",
+            "thumbnail": "images/testimonials-light2.png",
+            "data": {
+                "colors": "colors-a",
+                "title": "Testimonials",
+                "subtitle": "What our customers say about us",
+                "testimonials": [
+                    {
+                        "quote": "\"Very professional team. I loved working with the people at startup.io.\"\n",
+                        "name": "Johnna Doe",
+                        "title": "Product Marketing Manager at Acme",
+                        "image": {
+                            "type": "ImageBlock",
+                            "url": "/images/carla.jpg",
+                            "altText": "Photo of Johnna Doe"
+                        },
+                        "styles": {
+                            "self": {
+                                "margin": ["mt-0", "mb-0"],
+                                "flexDirection": "col"
+                            },
+                            "quote": {
+                                "textAlign": "center"
+                            },
+                            "name": {
+                                "textAlign": "center"
+                            },
+                            "title": {
+                                "textAlign": "center"
+                            }
+                        }
+                    },
+                    {
+                        "quote": "\"It's great to see someone taking acion while still maintaining a sustainable fish supply to home cooks.\"\n",
+                        "name": "Hugh Saturation",
+                        "title": "Creative at Acme",
+                        "image": {
+                            "type": "ImageBlock",
+                            "url": "/images/hugh-saturation.jpg",
+                            "altText": "Photo of Johnna Doe"
+                        },
+                        "styles": {
+                            "self": {
+                                "margin": ["mt-0", "mb-0"],
+                                "flexDirection": "col"
+                            },
+                            "quote": {
+                                "textAlign": "center"
+                            },
+                            "name": {
+                                "textAlign": "center"
+                            },
+                            "title": {
+                                "textAlign": "center"
+                            }
+                        }
+                    }
+                ],
+                "styles": {
+                    "self": {
+                        "height": "auto",
+                        "width": "narrow",
+                        "margin": ["mt-0", "mb-0"],
+                        "padding": ["pt-28", "pb-28", "pl-4", "pr-4"],
+                        "justifyContent": "center"
+                    },
+                    "title": {
+                        "textAlign": "center"
+                    },
+                    "subtitle": {
                         "textAlign": "center"
                     }
                 }

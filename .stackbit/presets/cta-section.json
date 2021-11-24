@@ -2,7 +2,7 @@
     "model": "CtaSection",
     "presets": [
         {
-            "label": "CTA light - Button bottom",
+            "label": "CTA light - button bottom",
             "thumbnail": "images/cta-light-bottom.png",
             "data": {
                 "colors": "colors-a",
@@ -38,7 +38,7 @@
             }
         },
         {
-            "label": "CTA dark - Button bottom",
+            "label": "CTA dark - button bottom",
             "thumbnail": "images/cta-dark-bottom.png",
             "data": {
                 "colors": "colors-f",
@@ -82,7 +82,7 @@
             }
         },
         {
-            "label": "CTA dark - Button right",
+            "label": "CTA dark - button right",
             "thumbnail": "images/cta-dark-right.png",
             "data": {
                 "colors": "colors-f",
