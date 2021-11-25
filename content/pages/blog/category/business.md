@@ -1,6 +1,6 @@
 ---
-layout: PostFeedLayout
-title: Blog
+layout: PostFeedCategoryLayout
+title: Business
 numOfPostsPerPage: 10
 postFeed:
   showDate: true

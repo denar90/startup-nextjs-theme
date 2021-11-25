@@ -10,14 +10,15 @@
         "build": "next build && next export",
         "start": "next start",
         "export": "next export",
+        "validate": "stackbit validate",
         "analyze": "ANALYZE=true next build",
         "analyze:server": "BUNDLE_ANALYZE=server next build",
         "analyze:browser": "BUNDLE_ANALYZE=browser next build"
     },
     "dependencies": {
-        "@stackbit/cli": "^0.1.14",
-        "@stackbit/components": "^0.1.54",
-        "axios": "^0.18.0",
+        "@stackbit/cli": "^0.1.25",
+        "@stackbit/components": "git://github.com/stackbit/stackbit-components.git#post-feed-layout",
+        "axios": "^0.24.0",
         "classnames": "^2.3.1",
         "jose": "^3.14.3",
         "markdown-to-jsx": "^7.1.3",

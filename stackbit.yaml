@@ -23,3 +23,14 @@ contentModels:
     newFilePath: 'blog/{slug}.md'
   Person:
     newFilePath: 'team/{slug}.json'
+  PostFeedLayout:
+    isPage: true
+    singleInstance: true
+    urlPath: '/blog'
+    file: 'blog/index.md'
+    newFilePath: 'blog/index.md'
+  PostFeedCategoryLayout:
+    isPage: true
+    singleInstance: false
+    urlPath: '/blog/category/{slug}'
+    newFilePath: 'blog/category/{slug}.md'

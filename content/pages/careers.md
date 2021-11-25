@@ -116,7 +116,6 @@ sections:
             showIcon: true
             icon: arrowRight
             iconPosition: right
-            style: link
             elementId: ''
             type: Link
       - type: FeaturedItem
@@ -141,7 +140,6 @@ sections:
             showIcon: true
             icon: arrowRight
             iconPosition: right
-            style: link
             elementId: ''
             type: Link
       - type: FeaturedItem
@@ -166,7 +164,6 @@ sections:
             showIcon: true
             icon: arrowRight
             iconPosition: right
-            style: link
             elementId: ''
             type: Link
       - type: FeaturedItem
@@ -191,7 +188,6 @@ sections:
             showIcon: true
             icon: arrowRight
             iconPosition: right
-            style: link
             elementId: ''
             type: Link
     columns: 1
