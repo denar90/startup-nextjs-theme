@@ -82,6 +82,8 @@
             "thumbnail": "images/testimonials-dark1.png",
             "data": {
                 "colors": "colors-f",
+                "title": "",
+                "subtitle": "",
                 "testimonials": [
                     {
                         "quote": "\"Very professional team. I loved working with the people at startup.io.\"\n",
