@@ -94,10 +94,9 @@ sections:
         label: Sign Up
         url: /
         style: secondary
-      - type: Button
+      - type: Link
         label: Watch Video
         url: /
-        style: link
         showIcon: true
         icon: arrowRight
     media:

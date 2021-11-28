@@ -10,8 +10,8 @@
                     {
                         "type": "HeroSection",
                         "colors": "colors-a",
-                        "title": "This is A Big Hero Headline",
-                        "text": "Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl. Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat itae interdum. Ut nec massa eget lorem blandit condimentum et at risus.",
+                        "title": "Love where you work, because work loves you",
+                        "text": "One platform, one community, getting to the bottom line of everything employment.  Figure out your benefits, practice for interviews, get mentored, help peers, get helped in return.",
                         "media": {
                             "type": "ImageBlock",
                             "url": "https://assets.stackbit.com/components/images/default/hero.png",
@@ -20,137 +20,16 @@
                         "actions": [
                             {
                                 "type": "Button",
-                                "label": "Get Started",
+                                "label": "Sign up",
                                 "url": "/",
                                 "style": "primary"
-                            },
-                            {
-                                "type": "Button",
-                                "label": "Learn More",
-                                "url": "/",
-                                "style": "secondary"
                             }
                         ],
                         "styles": {
                             "self": {
                                 "height": "auto",
                                 "width": "wide",
-                                "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
-                                "padding": ["pt-12", "pb-12", "pl-4", "pr-4"],
-                                "alignItems": "center",
-                                "justifyContent": "center",
-                                "flexDirection": "row"
-                            },
-                            "title": {
-                                "textAlign": "left"
-                            },
-                            "subtitle": {
-                                "fontWeight": 400,
-                                "fontStyle": "normal",
-                                "textAlign": "left"
-                            },
-                            "text": {
-                                "textAlign": "left"
-                            },
-                            "actions": {
-                                "justifyContent": "flex-start"
-                            }
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "label": "Contact",
-            "thumbnail": "images/page-contact.png",
-            "data": {
-                "title": "Contact us",
-                "sections": [
-                    {
-                        "type": "HeroSection",
-                        "title": "Contact us",
-                        "text": "Fill out the form below and we will get in touch within 1 business day. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-                        "media": {
-                            "type": "FormBlock",
-                            "action": "/.netlify/functions/submission_created",
-                            "elementId": "contact-form",
-                            "submitLabel": "Contact",
-                            "fields": [
-                                {
-                                    "type": "TextFormControl",
-                                    "label": "Name",
-                                    "placeholder": "Your name",
-                                    "width": "1/2"
-                                },
-                                {
-                                    "type": "TextFormControl",
-                                    "label": "Last name",
-                                    "placeholder": "Your last name",
-                                    "width": "1/2"
-                                },
-                                {
-                                    "type": "EmailFormControl",
-                                    "label": "Email",
-                                    "placeholder": "Your email",
-                                    "width": "full"
-                                },
-                                {
-                                    "type": "CheckboxFormControl",
-                                    "label": "Sign me up to receive updates",
-                                    "width": "full"
-                                }
-                            ]
-                        },
-                        "styles": {
-                            "self": {
-                                "height": "auto",
-                                "width": "wide",
-                                "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
-                                "padding": ["pt-12", "pb-12", "pl-4", "pr-4"],
-                                "alignItems": "flex-start",
-                                "justifyContent": "center",
-                                "flexDirection": "row"
-                            },
-                            "title": {
-                                "textAlign": "left"
-                            },
-                            "subtitle": {
-                                "fontWeight": 400,
-                                "fontStyle": "normal",
-                                "textAlign": "left"
-                            },
-                            "text": {
-                                "textAlign": "left"
-                            },
-                            "actions": {
-                                "justifyContent": "flex-start"
-                            }
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "label": "About",
-            "thumbnail": "images/page-about.png",
-            "data": {
-                "title": "About us",
-                "sections": [
-                    {
-                        "type": "HeroSection",
-                        "title": "About Us",
-                        "subtitle": "Who We Are",
-                        "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.",
-                        "media": {
-                            "type": "ImageBlock",
-                            "url": "https://assets.stackbit.com/components/images/default/hero.png",
-                            "altText": "About us"
-                        },
-                        "styles": {
-                            "self": {
-                                "height": "auto",
-                                "width": "wide",
-                                "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
+                                "margin": ["mt-0", "mb-11", "ml-0", "mr-0"],
                                 "padding": ["pt-12", "pb-12", "pl-4", "pr-4"],
                                 "alignItems": "center",
                                 "justifyContent": "center",
@@ -173,22 +52,458 @@
                         }
                     },
                     {
-                        "type": "CtaSection",
-                        "colors": "colors-c",
-                        "title": "Careers",
-                        "text": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+                        "type": "HeroSection",
+                        "colors": "colors-f",
+                        "title": "Where did everyone go?",
+                        "text": "Learn how top tech companies have learned working remote using our product.",
+                        "media": {
+                            "type": "ImageBlock",
+                            "url": "/images/hero-3.jpg",
+                            "caption": "Team meeting",
+                            "altText": "Where did everyone go?"
+                        },
                         "actions": [
                             {
                                 "type": "Button",
-                                "label": "Learn more",
+                                "label": "Sign up",
                                 "url": "/",
-                                "style": "primary"
+                                "style": "secondary"
+                            },
+                            {
+                                "type": "Button",
+                                "label": "Watch Video",
+                                "url": "/",
+                                "style": "link",
+                                "showIcon": true,
+                                "icon": "arrowRight"
+                            }
+
+                        ],
+                        "styles": {
+                            "self": {
+                                "height": "auto",
+                                "width": "wide",
+                                "margin": ["mt-20", "mb-20", "ml-20", "mr-20"],
+                                "padding": ["pt-28", "pb-28", "pl-4", "pr-4"],
+                                "alignItems": "center",
+                                "justifyContent": "center",
+                                "flexDirection": "row"
+                            },
+                            "title": {
+                                "textAlign": "left"
+                            },
+                            "subtitle": {
+                                "fontWeight": 400,
+                                "fontStyle": "normal",
+                                "textAlign": "left"
+                            },
+                            "text": {
+                                "textAlign": "left"
+                            },
+                            "actions": {
+                                "justifyContent": "flex-start"
+                            }
+                        }
+                    },
+                    {
+                        "type": "MediaGallerySection",
+                        "colors": "colors-h",
+                        "title": "",
+                        "subtitle": "",
+                        "images": [
+                            {
+                                "type": "ImageBlock",
+                                "url": "/images/apple.svg",
+                                "caption": "Apple",
+                                "altText": "Apple"
+                            },
+                            {
+                                "type": "ImageBlock",
+                                "url": "/images/google-play.svg",
+                                "caption": "Google Play",
+                                "altText": "Google Play"
+                            },
+                            {
+                                "type": "ImageBlock",
+                                "url": "/images/playstation.svg",
+                                "caption": "PlayStation",
+                                "altText": "PlayStation"
+                            },
+                            {
+                                "type": "ImageBlock",
+                                "url": "/images/gatsby.svg",
+                                "caption": "Gatsby",
+                                "altText": "Gatsby"
+                            },
+                            {
+                                "type": "ImageBlock",
+                                "url": "/images/xbox.svg",
+                                "caption": "Xbox",
+                                "altText": "Xbox"
+                            },
+                            {
+                                "type": "ImageBlock",
+                                "url": "/images/skype.svg",
+                                "caption": "Apple",
+                                "altText": "Apple"
+                            },
+                            {
+                                "type": "ImageBlock",
+                                "url": "/images/zcool.svg",
+                                "caption": "ZCOOL",
+                                "altText": "ZCOOL"
+                            }
+                        ],
+                        "columns": 7,
+                        "spacing": 3,
+                        "imageSizePx": 105,
+                        "aspectRatio": "1:1",
+                        "showCaption": false,
+                        "enableHover": false,
+                        "styles": {
+                            "self": {
+                                "height": "auto",
+                                "width": "wide",
+                                "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
+                                "padding": ["pt-36", "pb-24", "pl-4", "pr-4"],
+                                "justifyContent": "center"
+                            },
+                            "title": {
+                                "textAlign": "center"
+                            },
+                            "subtitle": {
+                                "fontWeight": 400,
+                                "fontStyle": "normal",
+                                "textAlign": "left"
+                            }
+                        }
+                    },
+                    {
+                        "type": "FeaturedItemsSection",
+                        "colors": "colors-h",
+                        "title": "Remote doesn’t mean alone. Here are so great features",
+                        "subtitle": "These are all excellent features that will provide exactly the things you’re looking for.",
+                        "items": [
+                            {
+                                "type": "FeaturedItem",
+                                "title": "Faster",
+                                "text": "Learn how top tech companies have learned working remote using our product.",
+                                "featuredImage": {
+                                    "type": "ImageBlock",
+                                    "url": "/images/faster.svg",
+                                    "altText": "Item image"
+                                },
+                                "styles": {
+                                    "title": {
+                                        "textAlign": "center"
+                                    },
+                                    "subtitle": {
+                                        "textAlign": "center"
+                                    },
+                                    "text": {
+                                        "textAlign": "center"
+                                    }
+                                }
+                            },
+                            {
+                                "type": "FeaturedItem",
+                                "title": "Smarter",
+                                "text": "Learn how top tech companies have learned working remote using our product.",
+                                "featuredImage": {
+                                    "type": "ImageBlock",
+                                    "url": "/images/smarter.svg",
+                                    "altText": "Item image"
+                                },
+                                "styles": {
+                                    "title": {
+                                        "textAlign": "center"
+                                    },
+                                    "subtitle": {
+                                        "textAlign": "center"
+                                    },
+                                    "text": {
+                                        "textAlign": "center"
+                                    }
+                                }
+                            },
+                            {
+                                "type": "FeaturedItem",
+                                "title": "Focused",
+                                "text": "Learn how top tech companies have learned working remote using our product.",
+                                "featuredImage": {
+                                    "type": "ImageBlock",
+                                    "url": "/images/focused.svg",
+                                    "altText": "Item image"
+                                },
+                                "styles": {
+                                    "title": {
+                                        "textAlign": "center"
+                                    },
+                                    "subtitle": {
+                                        "textAlign": "center"
+                                    },
+                                    "text": {
+                                        "textAlign": "center"
+                                    }
+                                }
+                            }
+                        ],
+                        "columns": 3,
+                        "styles": {
+                            "self": {
+                                "height": "auto",
+                                "width": "wide",
+                                "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
+                                "padding": ["pt-12", "pb-12", "pl-4", "pr-4"],
+                                "justifyContent": "center"
+                            },
+                            "title": {
+                                "textAlign": "center"
+                            },
+                            "subtitle": {
+                                "fontWeight": 400,
+                                "fontStyle": "normal",
+                                "textAlign": "center"
+                            }
+                        }
+                    },
+                    {
+                        "type": "HeroSection",
+                        "colors": "colors-a",
+                        "title": "A great feature, we’re proud of",
+                        "text": "Share WIP, comment on each other’s work, approve what’s ready to go, ship together",
+                        "media": {
+                            "type": "ImageBlock",
+                            "url": "/images/Image-on-the-right.svg",
+                            "altText": "Hero section image"
+                        },
+                        "styles": {
+                            "self": {
+                                "height": "auto",
+                                "width": "wide",
+                                "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
+                                "padding": ["pt-36", "pb-6", "pl-4", "pr-4"],
+                                "alignItems": "center",
+                                "justifyContent": "center",
+                                "flexDirection": "row"
+                            },
+                            "title": {
+                                "textAlign": "left"
+                            },
+                            "subtitle": {
+                                "fontWeight": 400,
+                                "fontStyle": "normal",
+                                "textAlign": "left"
+                            },
+                            "text": {
+                                "textAlign": "left"
+                            },
+                            "actions": {
+                                "justifyContent": "flex-start"
+                            }
+                        }
+                    },
+                    {
+                        "type": "HeroSection",
+                        "colors": "colors-a",
+                        "title": "And a strong value proposition",
+                        "text": "Share WIP, comment on each other’s work, approve what’s ready to go, ship together",
+                        "media": {
+                            "type": "ImageBlock",
+                            "url": "/images/Image-on-the-left.svg",
+                            "altText": "Hero section image"
+                        },
+                        "styles": {
+                            "self": {
+                                "height": "auto",
+                                "width": "wide",
+                                "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
+                                "padding": ["pt-6", "pb-36", "pl-4", "pr-4"],
+                                "alignItems": "center",
+                                "justifyContent": "center",
+                                "flexDirection": "row-reverse"
+                            },
+                            "title": {
+                                "textAlign": "left"
+                            },
+                            "subtitle": {
+                                "fontWeight": 400,
+                                "fontStyle": "normal",
+                                "textAlign": "left"
+                            },
+                            "text": {
+                                "textAlign": "left"
+                            },
+                            "actions": {
+                                "justifyContent": "flex-start"
+                            }
+                        }
+                    },
+                    {
+                        "type": "TextSection",
+                        "colors": "colors-a",
+                        "title": "",
+                        "text": "## We sometimes write things. You should read it, it might shed some  light on why we’re doing what we’re doing\n\n\n\n[See all posts](/blog)\n",
+                        "styles": {
+                            "self": {
+                                "height": "auto",
+                                "width": "wide",
+                                "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
+                                "padding": ["pt-22", "pb-0", "pl-4", "pr-4"],
+                                "justifyContent": "center"
+                            },
+                            "title": {
+                                "textAlign": "left"
+                            },
+                            "subtitle": {
+                                "fontWeight": 400,
+                                "fontStyle": "normal",
+                                "textAlign": "left"
+                            },
+                            "text": {
+                                "textAlign": "left"
+                            }
+                        }
+                    },
+                    {
+                        "type": "FeaturedPostsSection",
+                        "variant": "variant-b",
+                        "colors": "colors-a",
+                        "title": "",
+                        "subtitle": "",
+                        "posts": [
+                            "content/pages/blog/post-four.md",
+                            "content/pages/blog/post-three.md"
+                        ],
+                        "styles": {
+                            "self": {
+                                "height": "auto",
+                                "width": "wide",
+                                "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
+                                "padding": ["pt-12", "pb-36", "pl-4", "pr-4"],
+                                "justifyContent": "center"
+                            },
+                            "title": {
+                                "textAlign": "left"
+                            },
+                            "subtitle": {
+                                "fontWeight": 400,
+                                "fontStyle": "normal",
+                                "textAlign": "left"
+                            }
+                        }
+                    },
+                    {
+                        "type": "FaqSection",
+                        "colors": "colors-f",
+                        "title": "Need Answers?",
+                        "subtitle": "",
+                        "items": [
+                            {
+                                "question": "How it this different from what we have today?",
+                                "answer": "At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation"
+                            },
+                            {
+                                "question": "How it this different from what we have today?",
+                                "answer": "At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation"
+                            },
+                            {
+                                "question": "How it this different from what we have today?",
+                                "answer": "At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation"
+                            }
+                        ],
+                        "styles": {
+                            "self": {
+                                "height": "auto",
+                                "width": "narrow",
+                                "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
+                                "padding": ["pt-12", "pb-12", "pl-4", "pr-4"],
+                                "justifyContent": "center"
+                            },
+                            "title": {
+                                "textAlign": "left"
+                            },
+                            "subtitle": {
+                                "fontWeight": 400,
+                                "fontStyle": "normal",
+                                "textAlign": "left"
+                            }
+                        }
+                    },
+                    {
+                        "type": "TestimonialsSection",
+                        "colors": "colors-a",
+                        "title": "",
+                        "subtitle": "",
+                        "testimonials": [
+                            {
+                                "quote": "## Such a great experience to be using this product. It really helped with what I needed help with.",
+                                "name": "Carla Rogers",
+                                "title": "Happy customer",
+                                "image": {
+                                    "type": "ImageBlock",
+                                    "url": "/images/carla.jpg",
+                                    "altText": "Photo of Carla Rogers"
+                                },
+                                "styles": {
+                                    "self": {
+                                        "margin": ["mt-0", "mb-0"],
+                                        "flexDirection": "row-reverse"
+                                    },
+                                    "quote": {
+                                        "textAlign": "left"
+                                    },
+                                    "name": {
+                                        "textAlign": "left"
+                                    },
+                                    "title": {
+                                        "textAlign": "left"
+                                    }
+                                }
                             }
                         ],
                         "styles": {
                             "self": {
                                 "height": "auto",
                                 "width": "wide",
+                                "margin": ["mt-0", "mb-0"],
+                                "padding": ["pt-28", "pb-28", "pl-4", "pr-4"],
+                                "justifyContent": "center"
+                            },
+                            "title": {
+                                "textAlign": "left"
+                            },
+                            "subtitle": {
+                                "textAlign": "left"
+                            }
+                        }
+                    },
+                    {
+                        "type": "ContactSection",
+                        "colors": "colors-f",
+                        "title": "Get early access",
+                        "text": "Sign up your team today to be the first to try out our new product to increase your team's productivity.",
+                        "form": {
+                            "type": "FormBlock",
+                            "elementId": "sign-up-form",
+                            "action": "/.netlify/functions/submission_created",
+                            "destination": "",
+                            "fields": [
+                                {
+                                    "type": "EmailFormControl",
+                                    "name": "email",
+                                    "placeholder": "Your email",
+                                    "isRequired": "true",
+                                    "width": "full"
+                                }
+                            ],
+                            "submitLabel": "Sign Up"
+                        },
+                        "media": null,
+                        "styles": {
+                            "self": {
+                                "height": "auto",
+                                "width": "narrow",
                                 "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
                                 "padding": ["pt-12", "pb-12", "pl-4", "pr-4"],
                                 "alignItems": "center",
@@ -200,9 +515,401 @@
                             },
                             "text": {
                                 "textAlign": "left"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "label": "FAQ",
+            "thumbnail": "images/page-faq.png",
+            "data": {
+                "title": "FAQ",
+                "sections": [
+                    {
+                        "type": "FaqSection",
+                        "colors": "colors-a",
+                        "title": "Need Answers?",
+                        "subtitle": "",
+                        "items": [
+                            {
+                                "question": "How it this different from what we have today?",
+                                "answer": "At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation"
+                            },
+                            {
+                                "question": "How it this different from what we have today?",
+                                "answer": "At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation"
+                            },
+                            {
+                                "question": "How it this different from what we have today?",
+                                "answer": "At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation, At the office, working together is often a distruction, on remote, it could be motivation"
+                            }
+                        ],
+                        "styles": {
+                            "self": {
+                                "height": "auto",
+                                "width": "narrow",
+                                "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
+                                "padding": ["pt-12", "pb-12", "pl-4", "pr-4"],
+                                "justifyContent": "center"
+                            },
+                            "title": {
+                                "textAlign": "left"
+                            },
+                            "subtitle": {
+                                "fontWeight": 400,
+                                "fontStyle": "normal",
+                                "textAlign": "left"
+                            }
+                        }
+                    },
+                    {
+                        "type": "FeaturedPostsSection",
+                        "variant": "variant-b",
+                        "colors": "colors-a",
+                        "title": "",
+                        "subtitle": "",
+                        "posts": [
+                            "content/pages/blog/post-four.md",
+                            "content/pages/blog/post-three.md"
+                        ],
+                        "styles": {
+                            "self": {
+                                "height": "auto",
+                                "width": "wide",
+                                "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
+                                "padding": ["pt-12", "pb-36", "pl-4", "pr-4"],
+                                "justifyContent": "center"
+                            },
+                            "title": {
+                                "textAlign": "left"
+                            },
+                            "subtitle": {
+                                "fontWeight": 400,
+                                "fontStyle": "normal",
+                                "textAlign": "left"
+                            }
+                        }
+                    },
+                    {
+                        "type": "HeroSection",
+                        "colors": "colors-f",
+                        "title": "Where did everyone go?",
+                        "text": "Learn how top tech companies have learned working remote using our product.",
+                        "media": {
+                            "type": "ImageBlock",
+                            "url": "/images/hero-3.jpg",
+                            "caption": "Team meeting",
+                            "altText": "Where did everyone go?"
+                        },
+                        "actions": [
+                            {
+                                "type": "Button",
+                                "label": "Sign up",
+                                "url": "/",
+                                "style": "secondary"
+                            },
+                            {
+                                "type": "Button",
+                                "label": "Watch Video",
+                                "url": "/",
+                                "style": "link",
+                                "showIcon": true,
+                                "icon": "arrowRight"
+                            }
+
+                        ],
+                        "styles": {
+                            "self": {
+                                "height": "auto",
+                                "width": "wide",
+                                "margin": ["mt-20", "mb-20", "ml-20", "mr-20"],
+                                "padding": ["pt-28", "pb-28", "pl-4", "pr-4"],
+                                "alignItems": "center",
+                                "justifyContent": "center",
+                                "flexDirection": "row"
+                            },
+                            "title": {
+                                "textAlign": "left"
+                            },
+                            "subtitle": {
+                                "fontWeight": 400,
+                                "fontStyle": "normal",
+                                "textAlign": "left"
+                            },
+                            "text": {
+                                "textAlign": "left"
                             },
                             "actions": {
                                 "justifyContent": "flex-start"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "label": "Careers",
+            "thumbnail": "images/page-careers.png",
+            "data": {
+                "title": "Careers",
+                "sections": [
+                    {
+                        "type": "HeroSection",
+                        "colors": "colors-f",
+                        "title": "We’re growing fast",
+                        "text": "You should join us.",
+                        "media": {
+                            "type": "ImageBlock",
+                            "url": "/images/hero-4.jpg",
+                            "caption": "Team meeting",
+                            "altText": "Hero section image"
+                        },
+                        "styles": {
+                            "self": {
+                                "height": "auto",
+                                "width": "wide",
+                                "margin": ["mt-0", "mb-20", "ml-0", "mr-0"],
+                                "padding": ["pt-12", "pb-12", "pl-4", "pr-4"],
+                                "alignItems": "center",
+                                "justifyContent": "center",
+                                "flexDirection": "col"
+                            },
+                            "title": {
+                                "textAlign": "center"
+                            },
+                            "subtitle": {
+                                "fontWeight": 400,
+                                "fontStyle": "normal",
+                                "textAlign": "center"
+                            },
+                            "text": {
+                                "textAlign": "center"
+                            },
+                            "actions": {
+                                "justifyContent": "flex-start"
+                            }
+                        }
+                    },
+                    {
+                        "type": "QuoteSection",
+                        "colors": "colors-a",
+                        "quote": "## Being part of this team has been incredible. We’ve fill each other’s gaps, and we go to lunch together :)",
+                        "name": "Carla Rogers",
+                        "title": "Someone from the team",
+                        "styles": {
+                            "self": {
+                                "height": "auto",
+                                "width": "wide",
+                                "margin": ["mt-0", "mb-0"],
+                                "padding": ["pt-36", "pb-36", "pl-4", "pr-4"],
+                                "justifyContent": "center"
+                            },
+                            "quote": {
+                                "textAlign": "center"
+                            },
+                            "name": {
+                                "textAlign": "center"
+                            },
+                            "title": {
+                                "textAlign": "center"
+                            }
+                        }
+                    },
+                    {
+                        "type": "FeaturedItemsSection",
+                        "colors": "colors-a",
+                        "title": "Convinced? check out these open roles",
+                        "subtitle": "",
+                        "items": [
+                            {
+                                "type": "FeaturedItem",
+                                "title": "Product",
+                                "text": "Director of product management\n\n**San Francisco**\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and\n",
+                                "featuredImage": null,
+                                "styles": {
+                                    "title": {
+                                        "textAlign": "left"
+                                    },
+                                    "subtitle": {
+                                        "textAlign": "left"
+                                    },
+                                    "text": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            },
+                            {
+                                "type": "FeaturedItem",
+                                "title": "Engineering",
+                                "text": "Head of eng\n\n**San Francisco**\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and\n",
+                                "featuredImage": null,
+                                "styles": {
+                                    "title": {
+                                        "textAlign": "left"
+                                    },
+                                    "subtitle": {
+                                        "textAlign": "left"
+                                    },
+                                    "text": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            },
+                            {
+                                "type": "FeaturedItem",
+                                "title": "Product",
+                                "text": "Director of product management\n\n**San Francisco**\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and\n",
+                                "featuredImage": null,
+                                "styles": {
+                                    "title": {
+                                        "textAlign": "left"
+                                    },
+                                    "subtitle": {
+                                        "textAlign": "left"
+                                    },
+                                    "text": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            },
+                            {
+                                "type": "FeaturedItem",
+                                "title": "Product",
+                                "text": "Director of product management\n\n**San Francisco**\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and\n",
+                                "featuredImage": null,
+                                "styles": {
+                                    "title": {
+                                        "textAlign": "left"
+                                    },
+                                    "subtitle": {
+                                        "textAlign": "left"
+                                    },
+                                    "text": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        ],
+                        "columns": 1,
+                        "styles": {
+                            "self": {
+                                "height": "auto",
+                                "width": "narrow",
+                                "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
+                                "padding": ["pt-12", "pb-12", "pl-4", "pr-4"],
+                                "justifyContent": "center"
+                            },
+                            "title": {
+                                "textAlign": "center"
+                            },
+                            "subtitle": {
+                                "fontWeight": 400,
+                                "fontStyle": "normal",
+                                "textAlign": "center"
+                            }
+                        }
+                    },
+                    {
+                        "type": "ContactSection",
+                        "colors": "colors-f",
+                        "title": "Not seeing the right role? Contact us",
+                        "text": "We might have more roles soon, and we’ll contact you if we think there might be a good match",
+                        "form": {
+                            "type": "FormBlock",
+                            "elementId": "contact-form",
+                            "action": "/.netlify/functions/submission_created",
+                            "destination": "",
+                            "fields": [
+                                {
+                                    "type": "TextFormControl",
+                                    "name": "name",
+                                    "label": "Name",
+                                    "placeholder": "Your name",
+                                    "isRequired": "true",
+                                    "width": "1/2"
+                                },
+                                {
+                                    "type": "EmailFormControl",
+                                    "name": "email",
+                                    "label": "Email",
+                                    "placeholder": "Your email",
+                                    "isRequired": "true",
+                                    "width": "1/2"
+                                },
+                                {
+                                    "type": "TextFormControl",
+                                    "name": "address",
+                                    "label": "Home address",
+                                    "placeholder": "Your home address",
+                                    "isRequired": "false",
+                                    "width": "full"
+                                },
+                                {
+                                    "type": "CheckboxFormControl",
+                                    "name": "updates",
+                                    "label": "Sign me up to receive updates",
+                                    "isRequired": "false",
+                                    "width": "full"
+                                }
+                            ],
+                            "submitLabel": "Send Message"
+                        },
+                        "media": null,
+                        "styles": {
+                            "self": {
+                                "height": "auto",
+                                "width": "narrow",
+                                "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
+                                "padding": ["pt-12", "pb-12", "pl-4", "pr-4"],
+                                "alignItems": "center",
+                                "justifyContent": "center",
+                                "flexDirection": "row"
+                            },
+                            "title": {
+                                "textAlign": "left"
+                            },
+                            "text": {
+                                "textAlign": "left"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "label": "Blog",
+            "thumbnail": "images/page-blog.png",
+            "data": {
+                "title": "Blog",
+                "sections": [
+                    {
+                        "type": "PostFeedSection",
+                        "variant": "variant-a",
+                        "colors": "colors-a",
+                        "title": "Blog",
+                        "showRecent": true,
+                        "recentCount": 6,
+                        "subtitle": "",
+                        "styles": {
+                            "self": {
+                                "height": "auto",
+                                "width": "wide",
+                                "margin": ["mt-0", "mb-0", "ml-0", "mr-0"],
+                                "padding": ["pt-12", "pb-12", "pl-4", "pr-4"],
+                                "justifyContent": "center"
+                            },
+                            "title": {
+                                "textAlign": "center"
+                            },
+                            "subtitle": {
+                                "fontWeight": 400,
+                                "fontStyle": "normal",
+                                "textAlign": "left"
+                            },
+                            "actions": {
+                                "justifyContent": "center"
                             }
                         }
                     }
