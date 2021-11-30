@@ -54,13 +54,12 @@ sections:
     colors: colors-f
     title: Where did everyone go?
     text: >
-      Learn how top tech companies have learned working remote using our
-      product.
+      Learn how top tech companies have learned working remote using our product.
     actions:
       - type: Button
         label: Sign Up
         url: /
-        style: secondary
+        style: primary
       - type: Link
         label: Watch Video
         url: /
