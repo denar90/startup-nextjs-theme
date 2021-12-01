@@ -1,6 +1,6 @@
 {
     "type": "Person",
-    "id": "hugh-saturation",
+    "slug": "hugh-saturation",
     "firstName": "Hugh",
     "lastName": "Saturation",
     "role": "Developer",

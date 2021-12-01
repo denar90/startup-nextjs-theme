@@ -5,7 +5,7 @@
             "label": "Landing",
             "thumbnail": "images/page-landing.png",
             "data": {
-                "title": "Landing",
+                "title": "Home",
                 "sections": [
                     {
                         "type": "HeroSection",

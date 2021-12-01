@@ -1,0 +1,107 @@
+type: object
+name: FaqSection
+label: FAQ
+labelField: title
+thumbnail: https://assets.stackbit.com/components/models/thumbnails/default.png
+extends:
+  - Section
+groups:
+  - sectionComponent
+fieldGroups:
+  - name: styles
+    label: Styles
+  - name: settings
+    label: Settings
+fields:
+  - type: string
+    name: title
+    label: Title
+    default: Frequently Asked Questions
+  - type: string
+    name: subtitle
+    label: Subtitle
+    default: The section subtitle
+  - type: list
+    name: items
+    label: FAQ Items
+    items:
+      type: object
+      labelField: question
+      fields:
+        - type: string
+          name: question
+          label: Question
+          default: How it this different from what we have today?
+        - type: markdown
+          name: answer
+          label: Answer
+          default: At the office, working together is often a distruction, on remote, it could be motivation. At the office, working together is often a distruction, on remote, it could be motivation. At the office, working together is often a distruction, on remote, it could be motivation.
+        - type: style
+          name: styles
+          styles:
+            question:
+              fontWeight: ['400', '700']
+              fontStyle: ['normal', 'italic']
+              textAlign: ['left', 'center', 'right']
+            answer:
+              textAlign: ['left', 'center', 'right']
+    default:
+      - question: How it this different from what we have today?
+        answer: At the office, working together is often a distruction, on remote, it could be motivation. At the office, working together is often a distruction, on remote, it could be motivation. At the office, working together is often a distruction, on remote, it could be motivation.
+      - question: How it this different from what we have today?
+        answer: At the office, working together is often a distruction, on remote, it could be motivation. At the office, working together is often a distruction, on remote, it could be motivation. At the office, working together is often a distruction, on remote, it could be motivation.
+      - question: How it this different from what we have today?
+        answer: At the office, working together is often a distruction, on remote, it could be motivation. At the office, working together is often a distruction, on remote, it could be motivation. At the office, working together is often a distruction, on remote, it could be motivation.
+  - type: style
+    name: styles
+    styles:
+      self:
+        height: ['auto', 'screen']
+        width: ['narrow', 'wide', 'full']
+        margin: ['tw0:36']
+        padding: ['tw4:36']
+        justifyContent: ['flex-start', 'flex-end', 'center']
+        borderRadius: '*'
+        borderWidth: ['0:8']
+        borderStyle: '*'
+        borderColor:
+          - value: 'border-primary'
+            label: 'Primary color'
+            color: '$primary'
+          - value: 'border-secondary'
+            label: 'Secondary color'
+            color: '$secondary'
+          - value: 'border-dark'
+            label: 'Dark color'
+            color: '$dark'
+          - value: 'border-complementary'
+            label: 'Complementary color'
+            color: '$complementary'
+          - value: 'border-complementary-alt'
+            label: 'Complementary alt color'
+            color: '$complementaryAlt'
+      title:
+        fontWeight: ['400', '700']
+        fontStyle: ['normal', 'italic']
+        textAlign: ['left', 'center', 'right']
+      subtitle:
+        fontWeight: ['400', '700']
+        fontStyle: ['normal', 'italic']
+        textAlign: ['left', 'center', 'right']
+    default:
+      self:
+        height: auto
+        width: wide
+        margin: ['mt-0', 'mb-0', 'ml-0', 'mr-0']
+        padding: ['pt-12', 'pb-12', 'pl-4', 'pr-4']
+        justifyContent: center
+        borderRadius: none
+        borderWidth: 0
+        borderStyle: none
+        borderColor: border-dark
+      title:
+        textAlign: center
+      subtitle:
+        fontWeight: 400
+        fontStyle: normal
+        textAlign: center

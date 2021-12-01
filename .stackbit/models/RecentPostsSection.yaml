@@ -1,0 +1,26 @@
+type: object
+name: RecentPostsSection
+label: Recent posts
+labelField: title
+extends:
+  - PostFeedSection
+groups:
+  - sectionComponent
+fields:
+  - name: title
+    default: Recent Posts
+  - name: subtitle
+    default: Latest blog posts section example
+  - name: variant
+    default: variant-a
+    options:
+      - label: Three columns grid
+        value: variant-a
+      - label: List
+        value: variant-d
+  - name: colors
+    default: colors-h
+  - type: number
+    name: recentCount
+    label: Number of recent posts to show
+    default: 6

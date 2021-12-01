@@ -2,7 +2,16 @@ const plugin = require('tailwindcss/plugin');
 const themeStyle = require('./content/data/style.json');
 
 module.exports = {
-    presets: [require('@stackbit/components/styles/tailwind.default.config.js')],
+    mode: 'jit',
+    purge: {
+        enabled: false,
+        content: [
+            './src/**/*.{js,ts,jsx,tsx}',
+            './content/**/*'
+        ],
+        safelist: ['colors-a', 'colors-b', 'colors-c', 'colors-d', 'colors-e', 'colors-f', 'colors-g', 'colors-h', 'colors-i']
+    },
+    darkMode: false,
     theme: {
         extend: {
             colors: {
@@ -19,6 +28,14 @@ module.exports = {
                 'on-complementary': themeStyle.onComplementary,
                 'complementary-alt': themeStyle.complementaryAlt,
                 'on-complementary-alt': themeStyle.onComplementaryAlt
+            },
+            spacing: {
+                '1/1': '100%',
+                '2/3': '66.666%',
+                '3/2': '150%',
+                '3/4': '75%',
+                '4/3': '133.333%',
+                '9/16': '56.25%'
             },
             fontFamily: {
                 'sans': ['Poppins', 'sans-serif'],
@@ -80,7 +97,7 @@ module.exports = {
                     textDecoration: themeStyle.h6.decoration,
                     textTransform: themeStyle.h6.case
                 }
-            }),
+            });
             addComponents({
                 '.sb-component-button-primary': {
                     borderRadius: theme(`borderRadius.${themeStyle.buttonPrimary.borderRadius}`),

@@ -64,23 +64,14 @@ sections:
       title:
         textAlign: center
     type: QuoteSection
-  - colors: colors-a
-    elementId: ''
-    images:
-      - type: ImageBlock
-        url: /images/careers.jpg
-        altText: Team meeting
-        caption: Team meeting
-    spacing: 0
-    columns: 1
-    aspectRatio: 'auto'
-    imageSizePx: 640
-    showCaption: true
-    enableHover: false
+  - elementId: ''
+    colors: colors-a
+    text: |
+      ![carrers](/images/careers.jpg)
     styles:
       self:
         height: auto
-        width: full
+        width: narrow
         margin:
           - mt-0
           - mb-0
@@ -96,7 +87,9 @@ sections:
         textAlign: center
       subtitle:
         textAlign: center
-    type: MediaGallerySection
+      text:
+        textAlign: center
+    type: TextSection
   - colors: colors-a
     elementId: ''
     title: Convinced? check out these open roles
