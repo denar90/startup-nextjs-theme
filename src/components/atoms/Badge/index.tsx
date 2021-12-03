@@ -10,14 +10,18 @@ export default function Badge(props) {
     const cssClasses = props.className || null;
     const cssId = props.elementId || null;
     const annotationPrefix = props['data-sb-field-path'] || '';
+    const annotations = [
+        `${annotationPrefix}`,
+        `${annotationPrefix}.elementId#@id`
+    ];
     const styles = props.styles?.self || {};
     return (
         <div
             id={cssId}
             className={classNames('sb-component', 'sb-component-block', 'sb-component-badge', cssClasses, styles ? mapStyles(styles) : null)}
-            data-sb-field-path={`${annotationPrefix}.label ${annotationPrefix}.elementId#@id`}
+            data-sb-field-path={annotations.join(' ').trim()}
         >
-            {label}
+            <span data-sb-field-path=".label">{label}</span>
         </div>
     );
 }
