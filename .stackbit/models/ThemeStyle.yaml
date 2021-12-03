@@ -606,14 +606,6 @@ fields:
     name: onComplementary
     label: On complementary
     group: color-palettes
-  - type: color
-    name: complementaryAlt
-    label: Complementary alt
-    group: color-palettes
-  - type: color
-    name: onComplementaryAlt
-    label: On complementary alt
-    group: color-palettes
   - type: object
     name: buttonPrimary
     label: Primary button

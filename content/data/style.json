@@ -55,8 +55,6 @@
     "onSecondary": "#ffffff",
     "complementary": "#f6f1ed",
     "onComplementary": "#000000",
-    "complementaryAlt": "#edf2f6",
-    "onComplementaryAlt": "#000000",
     "buttonPrimary": {
         "weight": "normal",
         "case": "none",

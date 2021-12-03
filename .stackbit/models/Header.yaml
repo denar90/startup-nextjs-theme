@@ -71,11 +71,6 @@ fields:
         textColor: '$onComplementary'
         backgroundColor: '$complementary'
         borderColor: '#ececec'
-      - label: Colors I
-        value: colors-i
-        textColor: '$onComplementaryAlt'
-        backgroundColor: '$complementaryAlt'
-        borderColor: '#ececec'
     default: colors-a
   - type: enum
     name: secondaryColors
@@ -122,11 +117,6 @@ fields:
         value: colors-h
         textColor: '$onComplementary'
         backgroundColor: '$complementary'
-        borderColor: '#ececec'
-      - label: Colors I
-        value: colors-i
-        textColor: '$onComplementaryAlt'
-        backgroundColor: '$complementaryAlt'
         borderColor: '#ececec'
     default: colors-a
   - type: string

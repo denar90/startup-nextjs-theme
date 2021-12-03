@@ -66,9 +66,6 @@ fields:
           - value: 'border-complementary'
             label: 'Complementary color'
             color: '$complementary'
-          - value: 'border-complementary-alt'
-            label: 'Complementary alt color'
-            color: '$complementaryAlt'
       quote:
         textAlign: ['left', 'center', 'right']
       name:

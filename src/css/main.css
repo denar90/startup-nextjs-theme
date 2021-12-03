@@ -355,26 +355,4 @@
             @apply bg-light text-on-light;
         }
     }
-    .colors-i {
-        @apply bg-complementary-alt text-on-complementary-alt;
-        .sb-input,
-        .sb-select,
-        .sb-textarea {
-            @apply bg-light border-transparent text-on-light placeholder-on-light placeholder-opacity-50;
-        }
-        .sb-checkbox {
-            @apply bg-light border-transparent;
-        }
-        .sb-component-button-primary,
-        .sb-component-social-primary {
-            @apply bg-dark border-dark text-on-dark;
-        }
-        .sb-component-button-secondary,
-        .sb-component-social-secondary {
-            @apply border-dark text-dark;
-        }
-        .sb-card {
-            @apply bg-light text-on-light;
-        }
-    }
 }

@@ -9,7 +9,7 @@ module.exports = {
             './src/**/*.{js,ts,jsx,tsx}',
             './content/**/*'
         ],
-        safelist: ['colors-a', 'colors-b', 'colors-c', 'colors-d', 'colors-e', 'colors-f', 'colors-g', 'colors-h', 'colors-i']
+        safelist: ['colors-a', 'colors-b', 'colors-c', 'colors-d', 'colors-e', 'colors-f', 'colors-g', 'colors-h']
     },
     darkMode: false,
     theme: {
@@ -25,9 +25,7 @@ module.exports = {
                 secondary: themeStyle.secondary,
                 'on-secondary': themeStyle.onSecondary,
                 complementary: themeStyle.complementary,
-                'on-complementary': themeStyle.onComplementary,
-                'complementary-alt': themeStyle.complementaryAlt,
-                'on-complementary-alt': themeStyle.onComplementaryAlt
+                'on-complementary': themeStyle.onComplementary
             },
             spacing: {
                 '1/1': '100%',
