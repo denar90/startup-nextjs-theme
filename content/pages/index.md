@@ -56,11 +56,17 @@ sections:
     text: >
       Learn how top tech companies have learned working remote using our
       product.
+    badge:
+      type: Badge
+      label: Case study
+      styles:
+        self:
+          textAlign: left
     actions:
       - type: Button
         label: Sign Up
         url: /
-        style: secondary
+        style: primary
       - type: Link
         label: Watch Video
         url: /
@@ -325,41 +331,21 @@ sections:
     type: HeroSection
   - elementId: ''
     colors: colors-a
-    text: >+
-      ## “We sometimes write things. You should read it, it might shed some
-      light on why we’re doing what we’re doing”
-
-      [See all posts](/blog)
-
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-22
-          - pb-0
-          - pl-4
-          - pr-4
-        justifyContent: center
-        borderRadius: none
-        borderWidth: 0
-        borderStyle: none
-        borderColor: border-dark
-      title:
-        textAlign: left
-      subtitle:
-        textAlign: center
-      text:
-        textAlign: left
-    type: TextSection
-  - elementId: ''
     variant: variant-b
-    colors: colors-a
+    title: We sometimes write things. You should read it, it might shed some
+      light on why we’re doing what we’re doing
+    badge:
+      type: Badge
+      label: Our blog
+      styles:
+        self:
+          textAlign: left
+    actions:
+      - type: Link
+        label: See all posts
+        url: '/blog'
+        showIcon: true
+        icon: arrowRight
     posts:
       - content/pages/blog/post-four.md
       - content/pages/blog/post-three.md
@@ -373,7 +359,7 @@ sections:
           - ml-0
           - mr-0
         padding:
-          - pt-12
+          - pt-22
           - pb-36
           - pl-4
           - pr-4
@@ -383,11 +369,11 @@ sections:
         borderStyle: none
         borderColor: border-dark
       title:
-        textAlign: center
+        textAlign: left
       subtitle:
-        textAlign: center
+        textAlign: left
       actions:
-        justifyContent: center
+        justifyContent: flex-start
     type: FeaturedPostsSection
   - colors: colors-f
     elementId: ''

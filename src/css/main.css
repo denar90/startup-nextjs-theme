@@ -151,6 +151,11 @@
         @apply flex items-center h-4 before:flex-grow before:h-px before:bg-current;
     }
 
+    /* Badge */
+    .sb-component-badge {
+        @apply uppercase tracking-wider text-primary;
+    }
+
     /* Form controls */
     .sb-form-control {
         @apply mb-4;
@@ -284,6 +289,9 @@
         .sb-component-button-secondary,
         .sb-component-social-secondary {
             @apply border-on-primary text-on-primary;
+        }
+        .sb-component-badge {
+            @apply text-on-primary;
         }
         .sb-card {
             @apply bg-light text-on-light;

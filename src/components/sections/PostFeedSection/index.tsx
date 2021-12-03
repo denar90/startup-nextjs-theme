@@ -5,7 +5,7 @@ import dayjs from 'dayjs';
 import { getComponent } from '../../components-registry';
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 import { getDataAttrs } from '../../../utils/get-data-attrs';
-import { Link, Action } from '../../atoms';
+import { Link, Action, Badge } from '../../atoms';
 import getPageUrlPath from '../../../utils/get-page-url-path';
 
 export default function PostFeedSection(props) {
@@ -59,8 +59,9 @@ function postFeedHeader(props) {
     const styles = props.styles || {};
     return (
         <div>
+            {props.badge && <Badge {...props.badge} data-sb-field-path=".badge" />}
             {props.title && (
-                <h2 className={classNames(styles.title ? mapStyles(styles.title) : null)} data-sb-field-path=".title">
+                <h2 className={classNames(styles.title ? mapStyles(styles.title) : null, { 'mt-4': props.badge?.label })} data-sb-field-path=".title">
                     {props.title}
                 </h2>
             )}
