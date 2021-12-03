@@ -143,7 +143,6 @@ function heroActions(props) {
             className={classNames('overflow-x-hidden', {
                 'mt-8': props.title || props.subtitle || props.text || props.badge
             })}
-            data-sb-field-path=".actions"
         >
             <div
                 className={classNames('flex', 'flex-wrap', 'items-center', '-mx-2', styles.actions ? mapStyles(styles.actions) : null)}
