@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
     body {
         @apply bg-main text-base;
@@ -137,6 +136,16 @@
         @apply inline-flex items-center justify-center no-underline transition duration-200 ease-in hover:opacity-80;
     }
 
+    /* Socials */
+    .sb-component-social {
+        @apply inline-flex items-center justify-center no-underline transition duration-200 ease-in hover:opacity-80;
+    }
+
+    .sb-component-social-primary,
+    .sb-component-social-secondary {
+        @apply border-2 rounded-full p-2;
+    }
+
     /* Dividers */
     .sb-divider {
         @apply flex items-center h-4 before:flex-grow before:h-px before:bg-current;
@@ -180,10 +189,12 @@
         .sb-checkbox {
             @apply bg-light border-dark;
         }
-        .sb-component-button-primary {
+        .sb-component-button-primary,
+        .sb-component-social-primary {
             @apply bg-primary border-primary text-on-primary;
         }
-        .sb-component-button-secondary {
+        .sb-component-button-secondary,
+        .sb-component-social-secondary {
             @apply border-dark text-dark;
         }
         .sb-card {
@@ -200,10 +211,12 @@
         .sb-checkbox {
             @apply bg-light border-dark;
         }
-        .sb-component-button-primary {
+        .sb-component-button-primary,
+        .sb-component-social-primary {
             @apply bg-primary border-primary text-on-primary;
         }
-        .sb-component-button-secondary {
+        .sb-component-button-secondary,
+        .sb-component-social-secondary {
             @apply border-dark text-dark;
         }
         .sb-card {
@@ -220,10 +233,12 @@
         .sb-checkbox {
             @apply bg-light border-transparent;
         }
-        .sb-component-button-primary {
+        .sb-component-button-primary,
+        .sb-component-social-primary {
             @apply bg-primary border-primary text-on-primary;
         }
-        .sb-component-button-secondary {
+        .sb-component-button-secondary,
+        .sb-component-social-secondary {
             @apply border-on-dark text-on-dark;
         }
         .sb-card {
@@ -240,10 +255,12 @@
         .sb-checkbox {
             @apply bg-light border-transparent;
         }
-        .sb-component-button-primary {
+        .sb-component-button-primary,
+        .sb-component-social-primary {
             @apply bg-primary border-primary text-on-primary;
         }
-        .sb-component-button-secondary {
+        .sb-component-button-secondary,
+        .sb-component-social-secondary {
             @apply border-on-dark text-on-dark;
         }
         .sb-card {
@@ -260,10 +277,12 @@
         .sb-checkbox {
             @apply bg-light border-transparent;
         }
-        .sb-component-button-primary {
+        .sb-component-button-primary,
+        .sb-component-social-primary {
             @apply bg-dark border-dark text-on-dark;
         }
-        .sb-component-button-secondary {
+        .sb-component-button-secondary,
+        .sb-component-social-secondary {
             @apply border-on-primary text-on-primary;
         }
         .sb-card {
@@ -280,10 +299,12 @@
         .sb-checkbox {
             @apply bg-light border-transparent;
         }
-        .sb-component-button-primary {
+        .sb-component-button-primary,
+        .sb-component-social-primary {
             @apply bg-primary border-primary text-on-primary;
         }
-        .sb-component-button-secondary {
+        .sb-component-button-secondary,
+        .sb-component-social-secondary {
             @apply border-light text-light;
         }
         .sb-card {
@@ -300,10 +321,12 @@
         .sb-checkbox {
             @apply bg-light border-transparent;
         }
-        .sb-component-button-primary {
+        .sb-component-button-primary,
+        .sb-component-social-primary {
             @apply bg-primary border-primary text-on-primary;
         }
-        .sb-component-button-secondary {
+        .sb-component-button-secondary,
+        .sb-component-social-secondary {
             @apply border-dark text-dark;
         }
         .sb-card {
@@ -320,10 +343,12 @@
         .sb-checkbox {
             @apply bg-light border-transparent;
         }
-        .sb-component-button-primary {
+        .sb-component-button-primary,
+        .sb-component-social-primary {
             @apply bg-dark border-dark text-on-dark;
         }
-        .sb-component-button-secondary {
+        .sb-component-button-secondary,
+        .sb-component-social-secondary {
             @apply border-dark text-dark;
         }
         .sb-card {
@@ -340,10 +365,12 @@
         .sb-checkbox {
             @apply bg-light border-transparent;
         }
-        .sb-component-button-primary {
+        .sb-component-button-primary,
+        .sb-component-social-primary {
             @apply bg-dark border-dark text-on-dark;
         }
-        .sb-component-button-secondary {
+        .sb-component-button-secondary,
+        .sb-component-social-secondary {
             @apply border-dark text-dark;
         }
         .sb-card {

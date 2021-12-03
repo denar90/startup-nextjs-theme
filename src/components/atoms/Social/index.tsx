@@ -5,18 +5,24 @@ import Facebook from '../../svgs/facebook';
 import GitHub from '../../svgs/github';
 import Instagram from '../../svgs/instagram';
 import LinkedIn from '../../svgs/linkedin';
+import Reddit from '../../svgs/reddit';
 import Twitter from '../../svgs/twitter';
+import Vimeo from '../../svgs/vimeo';
+import YouTube from '../../svgs/youtube';
 
 const iconMap = {
     facebook: Facebook,
     github: GitHub,
     instagram: Instagram,
     linkedin: LinkedIn,
-    twitter: Twitter
+    reddit: Reddit,
+    twitter: Twitter,
+    vimeo: Vimeo,
+    youtube: YouTube
 };
 
 export default function Social(props) {
-    const { label, altText, url, showIcon } = props;
+    const { label, altText, url } = props;
     const icon = props.icon || 'facebook';
     const IconComponent = iconMap[icon];
     const annotationPrefix = props['data-sb-field-path'] || '';
@@ -37,14 +43,14 @@ export default function Social(props) {
             href={url}
             aria-label={altText}
             id={cssId}
-            className={classNames('sb-component', 'sb-component-block', style === 'link' ? 'sb-component-link' : 'sb-component-button', cssClasses, {
-                'sb-component-button-primary': style === 'primary',
-                'sb-component-button-secondary': style === 'secondary'
+            className={classNames('sb-component', 'sb-component-block', 'sb-component-social', cssClasses, {
+                'sb-component-social-primary': style === 'primary',
+                'sb-component-social-secondary': style === 'secondary'
             })}
             data-sb-field-path={annotations.join(' ').trim()}
         >
-            {label && <span>{label}</span>}
-            {showIcon && IconComponent && <IconComponent className={classNames('fill-current h-5 w-5', label ? 'mr-1.5 order-first' : '')} />}
+            {label && <span className="sr-only">{label}</span>}
+            {IconComponent && <IconComponent className="fill-current h-5 w-5" />}
         </Link>
     );
 }

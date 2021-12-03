@@ -119,22 +119,22 @@
             {
                 "type": "Social",
                 "altText": "Twitter",
+                "label": "Twitter",
                 "url": "/",
-                "showIcon": true,
                 "icon": "twitter"
             },
             {
                 "type": "Social",
                 "altText": "Instagram",
+                "label": "Instagram",
                 "url": "/",
-                "showIcon": true,
                 "icon": "instagram"
             },
             {
                 "type": "Social",
                 "altText": "Facebook",
+                "label": "Facebook",
                 "url": "/",
-                "showIcon": true,
                 "icon": "facebook"
             }
         ],

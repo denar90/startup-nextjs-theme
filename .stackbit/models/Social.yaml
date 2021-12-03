@@ -11,31 +11,38 @@ fields:
   - type: string
     name: label
     label: Label
-    default: ""
+    default: 'Facebook'
   - type: string
     name: altText
     label: Alt text
-    default: "Facebook"
+    default: ''
     description: The alternative text for screen readers
   - type: string
     name: url
     label: URL
     default: '/'
-  - type: boolean
-    name: showIcon
-    group: styles
-    label: Show icon
-    default: true
+    required: true
   - type: enum
     name: icon
     group: styles
     label: Icon
     options:
-      - facebook
-      - github
-      - instagram
-      - linkedin
-      - twitter
+      - label: Facebook
+        value: facebook
+      - label: GitHub
+        value: github
+      - label: Instagram
+        value: instagram
+      - label: LinkedIn
+        value: linkedin
+      - label: Reddit
+        value: reddit
+      - label: Twitter
+        value: twitter
+      - label: Vimeo
+        value: vimeo
+      - label: YouTube
+        value: youtube
     default: facebook
   - type: enum
     name: style
@@ -56,4 +63,3 @@ fields:
     label: Element ID
     description: The unique ID for an HTML element, must not contain whitespace
     default: ''
-

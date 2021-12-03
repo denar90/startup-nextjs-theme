@@ -65,7 +65,8 @@ sections:
         label: Watch Video
         url: /
         showIcon: true
-        icon: arrowRight
+        icon: playCircle
+        iconPosition: left
     styles:
       self:
         height: auto

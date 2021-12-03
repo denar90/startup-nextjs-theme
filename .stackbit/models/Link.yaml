@@ -16,11 +16,12 @@ fields:
     name: altText
     label: Alt text
     description: The alternative text for screen readers
-    default: Learn more
+    default: ''
   - type: string
     name: url
     label: URL
     default: '/'
+    required: true
   - type: boolean
     name: showIcon
     group: styles
@@ -33,12 +34,20 @@ fields:
     options:
       - label: Apple
         value: apple
-      - label: Arrow right
-        value: arrowRight
       - label: Arrow left
         value: arrowLeft
+      - label: Arrow left circle
+        value: arrowLeftCircle
+      - label: Arrow right
+        value: arrowRight
+      - label: Arrow right
+        value: arrowRightCircle
       - label: Cart
         value: cart
+      - label: Chevron left
+        value: chevronLeft
+      - label: Chevron right
+        value: chevronRight
       - label: Facebook
         value: facebook
       - label: GitHub
@@ -49,10 +58,22 @@ fields:
         value: instagram
       - label: LinkedIn
         value: linkedin
+      - label: Mail
+        value: mail
       - label: Play
         value: play
+      - label: Play circle
+        value: playCircle
+      - label: Reddit
+        value: reddit
+      - label: Send
+        value: send
       - label: Twitter
         value: twitter
+      - label: Vimeo
+        value: vimeo
+      - label: YouTube
+        value: youtube
     default: arrowRight
   - type: enum
     name: iconPosition
