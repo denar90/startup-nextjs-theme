@@ -189,9 +189,7 @@ sections:
               opacity: 100
           type: ImageBlock
         styles:
-          title:
-            textAlign: center
-          text:
+          self:
             textAlign: center
       - type: FeaturedItem
         title: Smarter
@@ -208,9 +206,7 @@ sections:
               opacity: 100
           type: ImageBlock
         styles:
-          title:
-            textAlign: center
-          text:
+          self:
             textAlign: center
       - type: FeaturedItem
         title: Focused
@@ -227,9 +223,7 @@ sections:
               opacity: 100
           type: ImageBlock
         styles:
-          title:
-            textAlign: center
-          text:
+          self:
             textAlign: center
     columns: 3
     styles:

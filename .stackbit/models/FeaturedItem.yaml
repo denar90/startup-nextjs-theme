@@ -26,22 +26,6 @@ fields:
     name: text
     label: Text
     default: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.'
-  - type: string
-    name: author
-    label: Author
-    default: ''
-  - type: number
-    name: rating
-    label: Rating
-    controlType: 'slider'
-    min: 1
-    max: 5
-    step: 1
-    default: 1
-  - type: boolean
-    name: isRatingVisible
-    label: Display rating
-    default: false
   - type: model
     name: featuredImage
     label: Image
@@ -62,26 +46,31 @@ fields:
   - type: style
     name: styles
     styles:
+      self:
+        padding: ['tw0:36']
+        borderRadius: '*'
+        borderWidth: ['0:8']
+        borderStyle: '*'
+        borderColor:
+          - value: 'border-primary'
+            label: 'Primary color'
+            color: '$primary'
+          - value: 'border-secondary'
+            label: 'Secondary color'
+            color: '$secondary'
+          - value: 'border-dark'
+            label: 'Dark color'
+            color: '$dark'
+          - value: 'border-complementary'
+            label: 'Complementary color'
+            color: '$complementary'
+        textAlign: ['left', 'center', 'right']
       title:
         fontWeight: ['400', '700']
         fontStyle: ['normal', 'italic']
-        textAlign: ['left', 'center', 'right']
       subtitle:
         fontWeight: ['400', '700']
         fontStyle: ['normal', 'italic']
-        textAlign: ['left', 'center', 'right']
-      text:
-        textAlign: ['left', 'center', 'right']
-      actions:
-        justifyContent: ['flex-start', 'flex-end', 'center']
     default:
-      title:
+      self:
         textAlign: left
-      subtitle:
-        fontWeight: 400
-        fontStyle: normal
-        textAlign: left
-      text:
-        textAlign: left
-      actions:
-        justifyContent: flex-start

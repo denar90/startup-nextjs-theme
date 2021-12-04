@@ -8,11 +8,28 @@ import ImageBlock from '../../../molecules/ImageBlock';
 
 export default function FeaturedItem(props) {
     const cssId = props.elementId || null;
+    const styles = props.styles || {};
+    const itemBorderWidth = styles.self?.borderWidth ? styles.self?.borderWidth : 0;
     return (
-        <article id={cssId} className="sb-component sb-component-block sb-component-item">
+        <article
+            id={cssId}
+            className={classNames(
+                'sb-component',
+                'sb-component-block',
+                'sb-component-item',
+                styles.self?.padding,
+                styles.self?.borderColor,
+                styles.self?.borderRadius ? mapStyles({ borderRadius: styles.self?.borderRadius }) : null,
+                styles.self?.borderStyle ? mapStyles({ borderStyle: styles.self?.borderStyle }) : null,
+                styles.self?.textAlign ? mapStyles({ textAlign: styles.self?.textAlign }) : null
+            )}
+            style={{
+                borderWidth: itemBorderWidth ? `${itemBorderWidth}px` : undefined
+            }}
+            data-sb-field-path={props['data-sb-field-path']}>
             {props.featuredImage && (
-                <div className="mb-4" data-sb-field-path=".featuredImage">
-                    <ImageBlock {...props.featuredImage} className="mx-auto" />
+                <div className="mb-6" data-sb-field-path=".featuredImage">
+                    <ImageBlock {...props.featuredImage} className="inline-block" />
                 </div>
             )}
             {props.title && (
@@ -31,23 +48,13 @@ export default function FeaturedItem(props) {
             {props.text && (
                 <Markdown
                     options={{ forceBlock: true, forceWrapper: true }}
-                    className={classNames('sb-markdown', props?.styles?.text ? mapStyles(props?.styles?.text) : null, {
+                    className={classNames('sb-markdown', {
                         'mt-4': props.title || props.subtitle
                     })}
                     data-sb-field-path=".text"
                 >
                     {props.text}
                 </Markdown>
-            )}
-            {props.author && (
-                <div className={classNames('text-sm', { 'mt-4': props.title || props.subtitle || props.text })} data-sb-field-path=".author">
-                    {props.author}
-                </div>
-            )}
-            {props.isRatingVisible && props.rating && (
-                <div className={classNames({ 'mt-4': props.title || props.subtitle || props.text || props.author })} data-sb-field-path=".rating">
-                    {props.rating}
-                </div>
             )}
             {itemActions(props)}
         </article>
@@ -62,12 +69,21 @@ function itemActions(props) {
     const styles = props.styles || {};
     return (
         <div
-            className={classNames('flex', 'flex-wrap', 'items-center', 'mt-6', '-mx-2', styles.actions ? mapStyles(styles.actions) : null)}
-            data-sb-field-path=".actions"
+            className={classNames('overflow-x-hidden', {
+                'mt-6': props.title || props.subtitle || props.text
+            })}
         >
-            {actions.map((action, index) => (
-                <Action key={index} {...action} className="mb-3 mx-2 lg:whitespace-nowrap" data-sb-field-path={`.${index}`} />
-            ))}
+            <div
+                className={classNames('flex', 'flex-wrap', 'items-center', '-mx-2', {
+                    'justify-center': styles.self?.textAlign === 'center',
+                    'justify-end': styles.self?.textAlign === 'right'
+                })}
+                data-sb-field-path=".actions"
+            >
+                {actions.map((action, index) => (
+                    <Action key={index} {...action} className="mb-3 mx-2 lg:whitespace-nowrap" data-sb-field-path={`.${index}`} />
+                ))}
+            </div>
         </div>
     );
 }

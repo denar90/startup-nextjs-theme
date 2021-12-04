@@ -11,6 +11,7 @@ export default function FeaturedItemsSection(props) {
     const colors = props.colors || 'colors-a';
     const sectionStyles = props.styles?.self || {};
     const sectionBorderWidth = sectionStyles.borderWidth ? sectionStyles.borderWidth : 0;
+    const featuredItems = props.items || [];
     return (
         <div
             id={cssId}
@@ -52,15 +53,13 @@ export default function FeaturedItemsSection(props) {
                             {props.subtitle}
                         </p>
                     )}
-                    {props?.items && (
+                    {featuredItems.length > 0 && (
                         <div
                             className={classNames('grid', 'gap-6', 'lg:gap-8', mapColStyles(props?.columns || 3), { 'mt-12': props.title || props.subtitle })}
                             data-sb-field-path=".items"
                         >
                             {props.items.map((item, index) => (
-                                <div key={index} data-sb-field-path={`.${index}`}>
-                                    <FeaturedItem {...item} />
-                                </div>
+                                <FeaturedItem key={index} {...item} data-sb-field-path={`.${index}`} />
                             ))}
                         </div>
                     )}

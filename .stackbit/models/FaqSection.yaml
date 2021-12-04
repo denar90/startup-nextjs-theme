@@ -37,27 +37,11 @@ fields:
         icon: arrowRight
   - type: list
     name: items
-    label: FAQ Items
+    label: Items
     items:
-      type: object
-      labelField: question
-      fields:
-        - type: string
-          name: question
-          label: Question
-          default: How it this different from what we have today?
-          required: true
-        - type: markdown
-          name: answer
-          label: Answer
-          default: At the office, working together is often a distruction, on remote, it could be motivation. At the office, working together is often a distruction, on remote, it could be motivation. At the office, working together is often a distruction, on remote, it could be motivation.
-          required: true
-        - type: style
-          name: styles
-          styles:
-            question:
-              fontWeight: ['400', '700']
-              fontStyle: ['normal', 'italic']
+      type: model
+      models:
+        - FaqItem
     default:
       - question: How it this different from what we have today?
         answer: At the office, working together is often a distruction, on remote, it could be motivation. At the office, working together is often a distruction, on remote, it could be motivation. At the office, working together is often a distruction, on remote, it could be motivation.
