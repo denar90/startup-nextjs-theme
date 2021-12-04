@@ -5,6 +5,12 @@ sections:
   - colors: colors-a
     elementId: ''
     title: Need Answers?
+    actions:
+      - type: Link
+        label: See all
+        url: '/'
+        showIcon: true
+        icon: arrowRight
     items:
       - question: How it this different from what we have today?
         answer: >-
@@ -27,7 +33,7 @@ sections:
     styles:
       self:
         height: auto
-        width: narrow
+        width: wide
         margin:
           - mt-0
           - mb-0
@@ -48,7 +54,9 @@ sections:
       subtitle:
         fontWeight: '400'
         fontStyle: normal
-        textAlign: center
+        textAlign: left
+      actions:
+        justifyContent: flex-start
     type: FaqSection
   - elementId: ''
     title: Recent posts

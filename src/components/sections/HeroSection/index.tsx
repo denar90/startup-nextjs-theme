@@ -5,8 +5,7 @@ import classNames from 'classnames';
 import { getComponent } from '../../components-registry';
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 import { getDataAttrs } from '../../../utils/get-data-attrs';
-import Action from '../../atoms/Action';
-import Badge from '../../atoms/Badge';
+import { Action, Badge } from '../../atoms';
 
 export default function HeroSection(props) {
     const cssId = props.elementId || null;
