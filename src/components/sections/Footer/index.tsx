@@ -17,8 +17,9 @@ export default function Footer(props) {
             data-sb-field-path={`${props.annotationPrefix}:footer`}
         >
             <div className={classNames('mx-auto', footerStyles.width ? mapMaxWidthStyles(footerStyles.width) : null)}>
+            <div className="sb-divider" />
                 {(props.logo || props.title || props.text) && (
-                    <div className="mb-12">
+                    <div className="mb-12 mt-6">
                         {props.logo && (
                             <Link href="/" className="inline-block mb-4" data-sb-field-path=".logo">
                                 {props.logo && <ImageBlock {...props.logo} className="max-h-12" />}
