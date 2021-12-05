@@ -5,6 +5,7 @@ numOfPostsPerPage: 10
 postFeed:
   showDate: true
   showAuthor: true
-  variant: variant-d
+  showExcerpt: true
+  variant: variant-a
   colors: colors-a
 ---

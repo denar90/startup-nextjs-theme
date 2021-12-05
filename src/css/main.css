@@ -188,6 +188,11 @@
         background-repeat: no-repeat;
     }
 
+    /* Cards */
+    .sb-card {
+        @apply border border-current rounded-2xl overflow-hidden;
+    }
+
     /* Color palettes */
     .colors-a {
         @apply bg-light text-on-light;
@@ -206,9 +211,6 @@
         .sb-component-button-secondary,
         .sb-component-social-secondary {
             @apply border-dark text-dark;
-        }
-        .sb-card {
-            @apply bg-dark bg-opacity-5;
         }
         .sb-component-item-hover {
             @apply hover:bg-primary hover:text-on-primary;

@@ -11,13 +11,6 @@ fields:
     default: Recent Posts
   - name: subtitle
     default: Latest blog posts section example
-  - name: variant
-    default: variant-a
-    options:
-      - label: Three columns grid
-        value: variant-a
-      - label: List
-        value: variant-d
   - name: colors
     default: colors-h
   - type: number

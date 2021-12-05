@@ -100,7 +100,7 @@ function PageLinks({ pageIndex, baseUrlPath, numOfPages }) {
         pageLinks.push(<PageLinkDisabled key="next" buttonLabel="→" />);
     }
 
-    return <div className={classNames('flex flex-row items-center justify-center mt-12')}>{pageLinks}</div>;
+    return <div className={classNames('flex flex-row items-center justify-center mt-12 sm:mt-20')}>{pageLinks}</div>;
 }
 
 function PageLink({ pageIndex, buttonLabel, baseUrlPath }) {

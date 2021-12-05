@@ -27,6 +27,10 @@ fields:
     label: Show post author
     description: Show the author of the post
     default: false
+  - type: boolean
+    name: showExcerpt
+    label: Show post excerpt
+    default: false
   - type: enum
     name: variant
     group: styles
@@ -37,10 +41,8 @@ fields:
         value: variant-a
       - label: Two columns grid
         value: variant-b
-      - label: Mixed grid
+      - label: Three columns cards grid
         value: variant-c
-      - label: List
-        value: variant-d
   - type: list
     name: actions
     label: Actions
