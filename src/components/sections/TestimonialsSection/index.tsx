@@ -8,10 +8,11 @@ import ImageBlock from '../../molecules/ImageBlock';
 
 export default function TestimonialsSection(props) {
     const cssId = props.elementId || null;
+    const variant = props.variant || 'variant-a';
     const colors = props.colors || 'colors-a';
     const testimonials = props.testimonials || [];
-    const sectionStyles = props.styles?.self || {};
-    const sectionBorderWidth = sectionStyles.borderWidth ? sectionStyles.borderWidth : 0;
+    const styles = props.styles || {};
+    const sectionBorderWidth = styles.self?.borderWidth ? styles.self?.borderWidth : 0;
     return (
         <div
             id={cssId}
@@ -25,23 +26,44 @@ export default function TestimonialsSection(props) {
                 'flex-col',
                 'justify-center',
                 'relative',
-                sectionStyles.height ? mapMinHeightStyles(sectionStyles.height) : null,
-                sectionStyles.margin,
-                sectionStyles.padding,
-                sectionStyles.borderColor,
-                sectionStyles.borderRadius ? mapStyles({ borderRadius: sectionStyles.borderRadius }) : null,
-                sectionStyles.borderStyle ? mapStyles({ borderStyle: sectionStyles.borderStyle }) : null
+                styles.self?.height ? mapMinHeightStyles(styles.self?.height) : null,
+                styles.self?.margin,
+                styles.self?.padding,
+                styles.self?.borderColor,
+                styles.self?.borderRadius ? mapStyles({ borderRadius: styles.self?.borderRadius }) : null,
+                styles.self?.borderStyle ? mapStyles({ borderStyle: styles.self?.borderStyle }) : null
             )}
             style={{
                 borderWidth: `${sectionBorderWidth}px`
             }}
         >
-            <div className={classNames('flex', 'w-full', sectionStyles.justifyContent ? mapStyles({ justifyContent: sectionStyles.justifyContent }) : null)}>
-                <div className={classNames('w-full', sectionStyles.width ? mapMaxWidthStyles(sectionStyles.width) : null)}>
-                    {testimonialsHeader(props)}
+            <div className={classNames('flex', 'w-full', styles.self?.justifyContent ? mapStyles({ justifyContent: styles.self?.justifyContent }) : null)}>
+                <div className={classNames('w-full', styles.self?.width ? mapMaxWidthStyles(styles.self?.width) : null)}>
+                    {props.title && (
+                        <h2 className={classNames(styles.title ? mapStyles(styles.title) : null)} data-sb-field-path=".title">
+                            {props.title}
+                        </h2>
+                    )}
+                    {props.subtitle && (
+                        <p
+                            className={classNames('text-lg', 'sm:text-xl', styles.subtitle ? mapStyles(styles.subtitle) : null, { 'mt-2': props.title })}
+                            data-sb-field-path=".subtitle"
+                        >
+                            {props.subtitle}
+                        </p>
+                    )}
                     {testimonials.length > 0 && (
-                        <div className={classNames({ 'mt-12': props.title || props.subtitle })} data-sb-field-path=".testimonials">
-                            {testimonials.map((testimonial, index) => testimonialItem(testimonial, index))}
+                        <div className={classNames('space-y-12', { 'mt-12': props.title || props.subtitle })} data-sb-field-path=".testimonials">
+                            {testimonials.map((testimonial, index) => {
+                                switch (variant) {
+                                    case 'variant-a':
+                                        return testimonialVariantA(testimonial, index);
+                                    case 'variant-b':
+                                        return testimonialVariantB(testimonial, index);
+                                    case 'variant-c':
+                                        return testimonialVariantC(testimonial, index);
+                                }
+                            })}
                         </div>
                     )}
                 </div>
@@ -50,76 +72,126 @@ export default function TestimonialsSection(props) {
     );
 }
 
-function testimonialsHeader(props) {
-    if (!props.title && !props.subtitle) {
-        return null;
-    }
-    const styles = props.styles || {};
-    return (
-        <div>
-            {props.title && (
-                <h2 className={classNames(styles.title ? mapStyles(styles.title) : null)} data-sb-field-path=".title">
-                    {props.title}
-                </h2>
-            )}
-            {props.subtitle && (
-                <p
-                    className={classNames('text-lg', 'sm:text-xl', styles.subtitle ? mapStyles(styles.subtitle) : null, { 'mt-2': props.title })}
-                    data-sb-field-path=".subtitle"
-                >
-                    {props.subtitle}
-                </p>
-            )}
-        </div>
-    );
-}
-
-function testimonialItem(testimonial, index) {
+function testimonialVariantA(testimonial, index) {
     const styles = testimonial.styles || {};
-    const testimonialStyles = styles.self || {};
-
     return (
         <blockquote
             key={index}
-            className={classNames(
-                'flex',
-                '-mx-4',
-                testimonialStyles.flexDirection ? mapFlexDirectionStyles(testimonialStyles.flexDirection) : null,
-                testimonialStyles.margin
-            )}
+            className="flex flex-col md:items-center md:flex-row"
             data-sb-field-path={`.${index}`}
         >
-            <div className="flex-grow my-4 px-4">
+            {testimonial.image && (
+                <div className="flex-shrink-0 max-w-lg mb-8 md:mb-0 md:mr-8 md:w-2/5" data-sb-field-path=".image">
+                    <ImageBlock {...testimonial.image} className="w-full" />
+                </div>
+            )}
+            <div className="flex-grow">
                 {testimonial.quote && (
                     <Markdown
                         options={{ forceBlock: true, forceWrapper: true }}
-                        className={classNames('sb-markdown', 'text-3xl', 'sm:text-4xl', styles.quote ? mapStyles(styles.quote) : null)}
+                        className="sb-markdown text-3xl sm:text-4xl sm:leading-tight lg:text-5xl lg:leading-tight"
                         data-sb-field-path=".quote"
                     >
                         {testimonial.quote}
                     </Markdown>
                 )}
                 {(testimonial.name || testimonial.title) && (
-                    <footer>
+                    <footer className="mt-8 md:mt-12">
                         {testimonial.name && (
-                            <span className={classNames('block', 'text-lg', styles.name ? mapStyles(styles.name) : null)} data-sb-field-path=".name">
+                            <div className={classNames('text-xl', 'sm:text-2xl', styles.name ? mapStyles(styles.name) : null)} data-sb-field-path=".name">
                                 {testimonial.name}
-                            </span>
+                            </div>
                         )}
                         {testimonial.title && (
-                            <span className={classNames('block', styles.title ? mapStyles(styles.title) : null)} data-sb-field-path=".title">
+                            <div className={classNames(styles.title ? mapStyles(styles.title) : null, { 'mt-2': testimonial.name })} data-sb-field-path=".title">
                                 {testimonial.title}
-                            </span>
+                            </div>
                         )}
                     </footer>
                 )}
             </div>
-            {testimonial.image && (
-                <div className="flex-shrink-0 mx-auto my-4 px-4">
-                    <div className="w-36 h-36 sm:w-48 sm:h-48" data-sb-field-path=".image">
-                        <ImageBlock {...testimonial.image} className="h-full object-cover w-full" />
-                    </div>
-                </div>
+        </blockquote>
+    );
+}
+
+function testimonialVariantB(testimonial, index) {
+    const styles = testimonial.styles || {};
+    return (
+        <blockquote
+            key={index}
+            data-sb-field-path={`.${index}`}
+        >
+            {testimonial.quote && (
+                <Markdown
+                    options={{ forceBlock: true, forceWrapper: true }}
+                    className="sb-markdown text-3xl sm:text-4xl sm:leading-tight lg:text-5xl lg:leading-tight"
+                    data-sb-field-path=".quote"
+                >
+                    {testimonial.quote}
+                </Markdown>
+            )}
+            {(testimonial.name || testimonial.title || testimonial.image) && (
+                <footer className="flex items-center mt-12 md:mt-16">
+                    {testimonial.image && (
+                        <div className="flex-shrink-0 mr-8 w-20 sm:w-28" data-sb-field-path=".image">
+                            <ImageBlock {...testimonial.image} className="w-full" />
+                        </div>
+                    )}
+                    {(testimonial.name || testimonial.title) && (
+                        <div className="flex-grow">
+                            {testimonial.name && (
+                                <div className={classNames('text-xl', 'sm:text-2xl', styles.name ? mapStyles(styles.name) : null)} data-sb-field-path=".name">
+                                    {testimonial.name}
+                                </div>
+                            )}
+                            {testimonial.title && (
+                                <div className={classNames(styles.title ? mapStyles(styles.title) : null, { 'mt-2': testimonial.name })} data-sb-field-path=".title">
+                                    {testimonial.title}
+                                </div>
+                            )}
+                        </div>
+                    )}
+                </footer>
+            )}
+        </blockquote>
+    );
+}
+
+function testimonialVariantC(testimonial, index) {
+    const styles = testimonial.styles || {};
+    return (
+        <blockquote
+            key={index}
+            className="text-center"
+            data-sb-field-path={`.${index}`}
+        >
+            {testimonial.quote && (
+                <Markdown
+                    options={{ forceBlock: true, forceWrapper: true }}
+                    className="sb-markdown text-3xl sm:text-4xl sm:leading-tight lg:text-5xl lg:leading-tight"
+                    data-sb-field-path=".quote"
+                >
+                    {testimonial.quote}
+                </Markdown>
+            )}
+            {(testimonial.name || testimonial.title || testimonial.image) && (
+                <footer className="mt-12 md:mt-16">
+                    {testimonial.image && (
+                        <div className={classNames('mx-auto', 'w-20', 'sm:w-28', { 'mb-6': testimonial.name || testimonial.title })} data-sb-field-path=".image">
+                            <ImageBlock {...testimonial.image} className="w-full" />
+                        </div>
+                    )}
+                    {testimonial.name && (
+                        <div className={classNames('text-xl', 'sm:text-2xl', styles.name ? mapStyles(styles.name) : null)} data-sb-field-path=".name">
+                            {testimonial.name}
+                        </div>
+                    )}
+                    {testimonial.title && (
+                        <div className={classNames(styles.title ? mapStyles(styles.title) : null, { 'mt-2': testimonial.name })} data-sb-field-path=".title">
+                            {testimonial.title}
+                        </div>
+                    )}
+                </footer>
             )}
         </blockquote>
     );
@@ -143,20 +215,6 @@ function mapMaxWidthStyles(width) {
             return 'max-w-screen-xl';
         case 'full':
             return 'max-w-full';
-    }
-    return null;
-}
-
-function mapFlexDirectionStyles(flexDirection) {
-    switch (flexDirection) {
-        case 'row':
-            return ['flex-col', 'md:flex-row'];
-        case 'row-reverse':
-            return ['flex-col-reverse', 'md:flex-row-reverse'];
-        case 'col':
-            return ['flex-col'];
-        case 'col-reverse':
-            return ['flex-col-reverse'];
     }
     return null;
 }

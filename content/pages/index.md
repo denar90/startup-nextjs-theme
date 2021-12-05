@@ -414,9 +414,10 @@ sections:
     type: FaqSection
   - elementId: ''
     colors: colors-a
+    variant: variant-a
     testimonials:
       - quote: >
-          ## Such a great experience to be using this product. It really helped
+          Such a great experience to be using this product. It really helped
           with what I needed help with.
         name: Carla Rogers
         title: Happy customer
@@ -425,17 +426,8 @@ sections:
           url: /images/carla.jpg
           altText: Photo of Isabelle Parks
         styles:
-          self:
-            margin:
-              - mt-0
-              - mb-0
-            flexDirection: row-reverse
-          quote:
-            textAlign: left
           name:
-            textAlign: left
-          title:
-            textAlign: left
+            fontWeight: '700'
     styles:
       self:
         height: auto
