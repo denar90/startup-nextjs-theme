@@ -5,20 +5,23 @@ sections:
   - type: HeroSection
     elementId: homepage-hero-1
     colors: colors-a
-    title: 'Love where you work, because work loves you'
-    text: >
-      One platform, one community, getting to the bottom line of everything
-      employment.  Figure out your benefits, practice for interviews, get
-      mentored, help peers, get helped in return.
+    title: 'Love your work. Work loves you.'
+    subtitle: One platform, one comunity.
     actions:
       - type: Button
-        label: Sign up
+        label: Get Started
         url: 'https://www.stackbit.com/'
         style: primary
         elementId: hero-main-button
+      - type: Link
+        label: Learn More
+        url: /
+        showIcon: true
+        icon: arrowRight
+        iconPosition: right
     media:
       type: ImageBlock
-      url: /images/hero-1.png
+      url: /images/hero.png
       altText: Image alt text
       caption: Image caption
     styles:
@@ -64,7 +67,7 @@ sections:
           textAlign: left
     actions:
       - type: Button
-        label: Sign Up
+        label: Get Started
         url: /
         style: primary
       - type: Link
@@ -110,6 +113,7 @@ sections:
       type: ImageBlock
   - colors: colors-h
     elementId: ''
+    subtitle: Trusted by
     images:
       - type: ImageBlock
         url: /images/apple.svg
@@ -190,7 +194,7 @@ sections:
           type: ImageBlock
         styles:
           self:
-            textAlign: center
+            textAlign: left
       - type: FeaturedItem
         title: Smarter
         text: >
@@ -258,9 +262,21 @@ sections:
     text: >
       Share WIP, comment on each other’s work, approve what’s ready to go, ship
       together
+    actions:
+      - type: Button
+        label: Get Started
+        url: 'https://www.stackbit.com/'
+        style: primary
+        elementId: hero-main-button
+      - type: Link
+        label: Learn More
+        url: /
+        showIcon: true
+        icon: arrowRight
+        iconPosition: right
     media:
       type: ImageBlock
-      url: /images/Image-on-the-right.svg
+      url: /images/hero-1.png
       altText: Hero section image
     styles:
       self:
@@ -295,9 +311,21 @@ sections:
     text: >
       Share WIP, comment on each other’s work, approve what’s ready to go, ship
       together
+    actions:
+      - type: Button
+        label: Get Started
+        url: 'https://www.stackbit.com/'
+        style: primary
+        elementId: hero-main-button
+      - type: Link
+        label: Learn More
+        url: /
+        showIcon: true
+        icon: arrowRight
+        iconPosition: right
     media:
       type: ImageBlock
-      url: /images/Image-on-the-left.svg
+      url: /images/hero-2.png
       altText: Hero section image
     styles:
       self:
@@ -372,7 +400,25 @@ sections:
   - colors: colors-f
     elementId: ''
     title: Need Answers?
+    actions:
+      - type: Link
+        label: See all
+        url: '/faq'
+        showIcon: true
+        icon: arrowRight
     items:
+      - question: How it this different from what we have today?
+        answer: >-
+          At the office, working together is often a distruction, on remote, it
+          could be motivation, At the office, working together is often a
+          distruction, on remote, it could be motivation, At the office, working
+          together is often a distruction, on remote, it could be motivation
+      - question: How it this different from what we have today?
+        answer: >-
+          At the office, working together is often a distruction, on remote, it
+          could be motivation, At the office, working together is often a
+          distruction, on remote, it could be motivation, At the office, working
+          together is often a distruction, on remote, it could be motivation
       - question: How it this different from what we have today?
         answer: >-
           At the office, working together is often a distruction, on remote, it
@@ -394,15 +440,15 @@ sections:
     styles:
       self:
         height: auto
-        width: narrow
+        width: wide
         margin:
           - mt-0
           - mb-0
           - ml-0
           - mr-0
         padding:
-          - pt-12
-          - pb-12
+          - pt-24
+          - pb-24
           - pl-4
           - pr-4
         justifyContent: center

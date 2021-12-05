@@ -3,7 +3,7 @@ title: Careers
 layout: PageLayout
 sections:
   - elementId: ''
-    colors: colors-f
+    colors: colors-a
     title: We’re growing fast
     subtitle: You should join us.
     media:
@@ -37,7 +37,7 @@ sections:
         justifyContent: flex-start
     type: HeroSection
   - elementId: ''
-    colors: colors-a
+    colors: colors-h
     quote: >-
       ## Being part of this team has been incredible. We’ve fill each other’s gaps, and we go to lunch together :)
     name: Carla Rogers

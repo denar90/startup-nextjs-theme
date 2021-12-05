@@ -62,11 +62,11 @@
                 }
             },
             "type": "ImageBlock",
-            "url": "/favicon.svg"
+            "url": "/images/logo.svg"
         }
     },
     "footer": {
-        "colors": "colors-c",
+        "colors": "colors-h",
         "logo": {
             "altText": "altText of the image",
             "caption": "Caption of the image",
@@ -77,7 +77,7 @@
                 }
             },
             "type": "ImageBlock",
-            "url": "/favicon.svg"
+            "url": "/images/logo.svg"
         },
         "title": "Startup.io",
         "contacts": {
