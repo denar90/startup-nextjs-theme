@@ -21,10 +21,10 @@ export default function Footer(props) {
                 {(props.logo || props.title || props.text) && (
                     <div className="mb-12 mt-6">
 
-                            <Link href="/" className="flex items-center" data-sb-field-path=".title#span[1] .logo#img[1]">
-                                {props.logo && <ImageBlock {...props.logo} className={classNames('max-h-12', { 'mr-2': props.title })} />}
-                                {props.title && <span className="text-2xl tracking-wide">{props.title}</span>}
-                            </Link>
+                        <Link href="/" className="flex items-center" data-sb-field-path=".title#span[1] .logo#img[1]">
+                            {props.logo && <ImageBlock {...props.logo} className={classNames('max-h-12', { 'mr-2': props.title })} />}
+                            {props.title && <span className="text-2xl tracking-wide">{props.title}</span>}
+                        </Link>
 
                         {props.text && (
                             <Markdown options={{ forceBlock: true, forceWrapper: true }} className="sb-markdown max-w-xl" data-sb-field-path=".text">
