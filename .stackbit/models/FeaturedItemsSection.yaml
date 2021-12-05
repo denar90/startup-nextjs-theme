@@ -73,6 +73,10 @@ fields:
     max: 4
     step: 1
     default: 3
+  - type: boolean
+    name: enableHover
+    label: Enable hover
+    default: false
   - type: style
     name: styles
     styles:

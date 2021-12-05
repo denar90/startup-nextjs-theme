@@ -156,6 +156,11 @@
         @apply uppercase tracking-wider text-primary;
     }
 
+    /* Featured items */
+    .sb-component-item-hover {
+        @apply transition duration-200 ease-in;
+    }
+
     /* Form controls */
     .sb-form-control {
         @apply mb-4;
@@ -204,6 +209,9 @@
         }
         .sb-card {
             @apply bg-dark bg-opacity-5;
+        }
+        .sb-component-item-hover {
+            @apply hover:bg-primary hover:text-on-primary;
         }
     }
     .colors-b {

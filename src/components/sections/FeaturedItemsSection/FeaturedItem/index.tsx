@@ -17,6 +17,7 @@ export default function FeaturedItem(props) {
                 'sb-component',
                 'sb-component-block',
                 'sb-component-item',
+                props.enableHover ? 'sb-component-item-hover' : null,
                 styles.self?.padding,
                 styles.self?.borderColor,
                 styles.self?.borderRadius ? mapStyles({ borderRadius: styles.self?.borderRadius }) : null,
@@ -33,13 +34,13 @@ export default function FeaturedItem(props) {
                 </div>
             )}
             {props.title && (
-                <h3 className={classNames(props?.styles?.title ? mapStyles(props?.styles?.title) : null)} data-sb-field-path=".title">
+                <h3 className={classNames(styles.title ? mapStyles(styles.title) : null)} data-sb-field-path=".title">
                     {props.title}
                 </h3>
             )}
             {props.subtitle && (
                 <p
-                    className={classNames('text-lg', props?.styles?.subtitle ? mapStyles(props?.styles?.subtitle) : null, { 'mt-1': props.title })}
+                    className={classNames('text-lg', styles.subtitle ? mapStyles(styles.subtitle) : null, { 'mt-1': props.title })}
                     data-sb-field-path=".subtitle"
                 >
                     {props.subtitle}

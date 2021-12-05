@@ -18,17 +18,6 @@ fields:
     name: subtitle
     label: Subtitle
     default: Blog posts
-  - type: model
-    name: badge
-    label: Badge
-    models:
-      - Badge
-    default:
-      type: Badge
-      label: Our blog
-      styles:
-        self:
-          textAlign: center
   - type: boolean
     name: showDate
     label: Show post date
