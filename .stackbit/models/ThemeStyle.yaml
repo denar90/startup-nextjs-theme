@@ -17,8 +17,8 @@ fields:
     options:
       - label: Sans
         value: sans
-      - label: Serif
-        value: serif
+      - label: Sans alt
+        value: sansAlt
   - type: object
     name: h1
     label: H1

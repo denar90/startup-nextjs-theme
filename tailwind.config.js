@@ -5,10 +5,7 @@ module.exports = {
     mode: 'jit',
     purge: {
         enabled: false,
-        content: [
-            './src/**/*.{js,ts,jsx,tsx}',
-            './content/**/*'
-        ],
+        content: ['./src/**/*.{js,ts,jsx,tsx}', './content/**/*'],
         safelist: ['colors-a', 'colors-b', 'colors-c', 'colors-d', 'colors-e', 'colors-f', 'colors-g', 'colors-h']
     },
     darkMode: false,
@@ -36,8 +33,8 @@ module.exports = {
                 '9/16': '56.25%'
             },
             fontFamily: {
-                'sans': ['Poppins', 'sans-serif'],
-                'serif': ['"Noto Serif"', 'serif']
+                sans: ['Poppins', 'sans-serif'],
+                sansAlt: ['Noto Sans Display', 'sans-serif']
             }
         }
     },

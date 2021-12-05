@@ -43,7 +43,7 @@
         "case": "none",
         "letterSpacing": "normal"
     },
-    "fontBody": "sans",
+    "fontBody": "sansAlt",
     "main": "#ffffff",
     "light": "#ffffff",
     "onLight": "#000000",
