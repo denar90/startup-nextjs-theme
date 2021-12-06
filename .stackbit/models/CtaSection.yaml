@@ -15,12 +15,16 @@ fieldGroups:
 fields:
   - name: colors
     default: colors-f
-  - type: model
-    name: backgroundImage
+  - type: enum
+    name: backgroundSize
     group: styles
-    label: Background image
-    models:
-      - ImageBlock
+    label: Background size
+    options:
+      - label: Full
+        value: full
+      - label: Inset
+        value: inset
+    default: full
   - type: string
     name: title
     label: Title
@@ -43,14 +47,20 @@ fields:
         label: Try it now
         url: '/about'
         style: primary
+  - type: model
+    name: backgroundImage
+    group: styles
+    label: Background image
+    models:
+      - ImageBlock
   - type: style
     name: styles
     styles:
       self:
         height: ['auto', 'screen']
         width: ['narrow', 'wide', 'full']
-        margin: ['tw0:36']
-        padding: ['tw4:36']
+        margin: ['tw0:64']
+        padding: ['tw0:64']
         alignItems: ['flex-start', 'flex-end', 'center']
         justifyContent: ['flex-start', 'flex-end', 'center']
         flexDirection: ['row', 'col']
@@ -70,6 +80,7 @@ fields:
           - value: 'border-complementary'
             label: 'Complementary color'
             color: '$complementary'
+        boxShadow: '*'
       title:
         fontWeight: ['400', '700']
         fontStyle: ['normal', 'italic']

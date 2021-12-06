@@ -7,9 +7,71 @@ featuredImage:
   type: ImageBlock
   url: /images/post-5.jpg
   altText: Post thumbnail image
-bottomSections: []
+bottomSections:
+  - elementId: ''
+    variant: variant-a
+    colors: colors-a
+    title: Read next
+    actions: []
+    recentCount: 3
+    styles:
+      self:
+        height: auto
+        width: wide
+        margin: ['mt-0', 'mb-0', 'ml-0', 'mr-0']
+        padding: ['pt-12', 'pb-12', 'pr-4', 'pl-4']
+        justifyContent: center
+      title:
+        fontWeight: '700'
+        fontStyle: normal
+        textAlign: center
+      subtitle:
+        fontWeight: '400'
+        fontStyle: normal
+        textAlign: center
+      actions:
+        justifyContent: center
+    type: RecentPostsSection
+  - type: CtaSection
+    colors: colors-f
+    backgroundSize: inset
+    title: Let's do this
+    text: >-
+      The Stackbit theme is flexible and scalable to every need. It can manage
+      any layout and any screen.
+    actions:
+      - type: Button
+        label: Get Started
+        url: 'https://www.stackbit.com/'
+        style: primary
+    styles:
+      self:
+        height: auto
+        width: wide
+        margin:
+          - mt-0
+          - mb-0
+          - ml-4
+          - mr-4
+        padding:
+          - pt-16
+          - pb-16
+          - pl-12
+          - pr-12
+        alignItems: center
+        justifyContent: center
+        flexDirection: row
+        borderRadius: xx-large
+        boxShadow: xx-large
+      title:
+        textAlign: left
+      text:
+        textAlign: left
+      actions:
+        justifyContent: flex-start
 layout: PostLayout
 ---
+
 Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.
 
 ![](/images/work-book-cover-2.jpeg)

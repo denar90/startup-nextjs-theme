@@ -14,10 +14,7 @@ bottomSections:
     colors: colors-a
     title: Read next
     actions: []
-    posts:
-      - content/pages/blog/post-one.md
-      - content/pages/blog/post-three.md
-      - content/pages/blog/post-five.md
+    recentCount: 3
     styles:
       self:
         height: auto
@@ -35,7 +32,44 @@ bottomSections:
         textAlign: center
       actions:
         justifyContent: center
-    type: FeaturedPostsSection
+    type: RecentPostsSection
+  - type: CtaSection
+    colors: colors-f
+    backgroundSize: inset
+    title: Let's do this
+    text: >-
+      The Stackbit theme is flexible and scalable to every need. It can manage
+      any layout and any screen.
+    actions:
+      - type: Button
+        label: Get Started
+        url: 'https://www.stackbit.com/'
+        style: primary
+    styles:
+      self:
+        height: auto
+        width: wide
+        margin:
+          - mt-0
+          - mb-0
+          - ml-4
+          - mr-4
+        padding:
+          - pt-16
+          - pb-16
+          - pl-12
+          - pr-12
+        alignItems: center
+        justifyContent: center
+        flexDirection: row
+        borderRadius: xx-large
+        boxShadow: xx-large
+      title:
+        textAlign: left
+      text:
+        textAlign: left
+      actions:
+        justifyContent: flex-start
 layout: PostLayout
 ---
 

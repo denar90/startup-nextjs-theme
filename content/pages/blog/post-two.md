@@ -11,8 +11,33 @@ featuredImage:
   url: /images/post-2.jpg
   altText: Post Image
 bottomSections:
+  - elementId: ''
+    variant: variant-a
+    colors: colors-a
+    title: Read next
+    actions: []
+    recentCount: 3
+    styles:
+      self:
+        height: auto
+        width: wide
+        margin: ['mt-0', 'mb-0', 'ml-0', 'mr-0']
+        padding: ['pt-12', 'pb-12', 'pr-4', 'pl-4']
+        justifyContent: center
+      title:
+        fontWeight: '700'
+        fontStyle: normal
+        textAlign: center
+      subtitle:
+        fontWeight: '400'
+        fontStyle: normal
+        textAlign: center
+      actions:
+        justifyContent: center
+    type: RecentPostsSection
   - type: CtaSection
     colors: colors-f
+    backgroundSize: inset
     title: Let's do this
     text: >-
       The Stackbit theme is flexible and scalable to every need. It can manage
@@ -29,20 +54,18 @@ bottomSections:
         margin:
           - mt-0
           - mb-0
-          - ml-0
-          - mr-0
+          - ml-4
+          - mr-4
         padding:
-          - pt-12
-          - pb-12
-          - pr-4
-          - pl-4
+          - pt-16
+          - pb-16
+          - pl-12
+          - pr-12
         alignItems: center
         justifyContent: center
         flexDirection: row
-        borderRadius: none
-        borderWidth: 0
-        borderStyle: none
-        borderColor: border-dark
+        borderRadius: xx-large
+        boxShadow: xx-large
       title:
         textAlign: left
       text:
