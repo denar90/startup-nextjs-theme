@@ -65,7 +65,7 @@ sections:
           textAlign: left
     actions:
       - type: Button
-        label: Sign Up
+        label: Get Started
         url: /
         style: primary
       - type: Link
@@ -416,6 +416,7 @@ sections:
       actions:
         justifyContent: flex-start
     type: FeaturedPostsSection
+    showDate: true
   - colors: colors-f
     elementId: ''
     title: Need Answers?
@@ -438,6 +439,18 @@ sections:
           could be motivation, At the office, working together is often a
           distruction, on remote, it could be motivation, At the office, working
           together is often a distruction, on remote, it could be motivation
+      - question: How it this different from what we have today?
+        answer: >-
+          At the office, working together is often a distruction, on remote, it
+          could be motivation. At the office, working together is often a
+          distruction, on remote, it could be motivation. At the office, working
+          together is often a distruction, on remote, it could be motivation.
+      - question: How it this different from what we have today?
+        answer: >-
+          At the office, working together is often a distruction, on remote, it
+          could be motivation. At the office, working together is often a
+          distruction, on remote, it could be motivation. At the office, working
+          together is often a distruction, on remote, it could be motivation.
     styles:
       self:
         height: auto
@@ -448,8 +461,8 @@ sections:
           - ml-0
           - mr-0
         padding:
-          - pt-12
-          - pb-12
+          - pt-20
+          - pb-36
           - pl-4
           - pr-4
         justifyContent: center
@@ -464,6 +477,15 @@ sections:
         fontStyle: normal
         textAlign: center
     type: FaqSection
+    actions:
+      - altText: ''
+        url: /
+        showIcon: true
+        icon: arrowRight
+        iconPosition: right
+        elementId: ''
+        type: Link
+        label: See all
   - elementId: ''
     colors: colors-a
     variant: variant-a
@@ -519,21 +541,21 @@ sections:
     styles:
       self:
         height: auto
-        width: narrow
+        width: wide
         margin:
-          - mt-0
+          - mt-20
           - mb-0
           - ml-0
           - mr-0
         padding:
           - pt-36
           - pb-36
-          - pr-4
-          - pl-4
+          - pr-32
+          - pl-32
         alignItems: center
         justifyContent: center
         flexDirection: row
-        borderRadius: none
+        borderRadius: xx-large
         borderWidth: 0
         borderStyle: none
         borderColor: border-dark
@@ -541,4 +563,5 @@ sections:
         textAlign: left
       text:
         textAlign: left
+    backgroundSize: inset
 ---

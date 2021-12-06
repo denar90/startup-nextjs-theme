@@ -9,7 +9,7 @@
         "letterSpacing": "normal"
     },
     "h2": {
-        "size": "6xl",
+        "size": "5xl",
         "weight": "normal",
         "decoration": "none",
         "case": "none",
@@ -44,7 +44,7 @@
         "letterSpacing": "normal"
     },
     "fontBody": "sansAlt",
-    "main": "#ffffff",
+    "main": "#f6f1ed",
     "light": "#ffffff",
     "onLight": "#000000",
     "dark": "#282828",
