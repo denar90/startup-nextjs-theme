@@ -19,18 +19,12 @@ export default function Footer(props) {
             <div className={classNames('mx-auto', footerStyles.width ? mapMaxWidthStyles(footerStyles.width) : null)}>
                 {(props.logo || props.title || props.text) && (
                     <div className="mb-12">
-                        {props.logo && (
-                            <Link href="/" className="inline-block mb-4" data-sb-field-path=".logo">
-                                {props.logo && <ImageBlock {...props.logo} className="max-h-12" />}
-                            </Link>
-                        )}
-                        {props.title && (
-                            <div className="mb-2 text-2xl tracking-wide" data-sb-field-path=".title">
-                                {props.title}
-                            </div>
-                        )}
+                        <Link href="/" className="flex items-center" data-sb-field-path=".title#span[1] .logo#img[1]">
+                            {props.logo && <ImageBlock {...props.logo} className={classNames('max-h-12', { 'mr-2': props.title })} />}
+                            {props.title && <span className="text-2xl tracking-wide">{props.title}</span>}
+                        </Link>
                         {props.text && (
-                            <Markdown options={{ forceBlock: true, forceWrapper: true }} className="sb-markdown max-w-xl" data-sb-field-path=".text">
+                            <Markdown options={{ forceBlock: true, forceWrapper: true }} className={classNames('sb-markdown', 'max-w-xl', { 'mt-8': props.title || props.logo })} data-sb-field-path=".text">
                                 {props.text}
                             </Markdown>
                         )}
