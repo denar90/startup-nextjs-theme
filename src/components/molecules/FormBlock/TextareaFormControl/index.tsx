@@ -19,7 +19,7 @@ export default function TextareaFormControl(props) {
             data-sb-field-path={props['data-sb-field-path']}
         >
             {props.label && (
-                <label id={labelId} className="sb-label" htmlFor={props.name} data-sb-field-path=".label .name#@for">
+                <label id={labelId} className={classNames('sb-label', { 'sr-only': props.hideLabel })} htmlFor={props.name} data-sb-field-path=".label .name#@for">
                     {props.label}
                 </label>
             )}

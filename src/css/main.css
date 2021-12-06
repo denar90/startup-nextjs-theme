@@ -171,20 +171,34 @@
     .sb-input,
     .sb-select,
     .sb-textarea {
-        @apply border p-2 text-base w-full focus:outline-none;
+        @apply bg-transparent border border-current p-3 w-full focus:outline-none;
+    }
+    option {
+        color: initial;
     }
     .sb-checkbox {
-        @apply align-middle appearance-none bg-origin-border border cursor-pointer flex-shrink-0 inline-block h-5 select-none w-5 checked:bg-center checked:bg-no-repeat;
+        @apply appearance-none absolute select-none opacity-0;
+        height: 1.5em;
+        width: 1.5em;
     }
-    .sb-checkbox:checked {
-        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23111' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
-        background-size: 100%;
+    .sb-checkbox + .sb-label {
+        @apply cursor-pointer pl-8 relative;
+    }
+    .sb-checkbox + .sb-label:before {
+        @apply absolute left-0 top-1/2 transform -translate-y-1/2 border border-current cursor-pointer text-center;
+        content: '';
+        height: 1.5em;
+        width: 1.5em;
+        line-height: 1.5em;
+    }
+    .sb-checkbox:checked + .sb-label:before {
+        content: '\2713';
     }
     .sb-select {
         @apply appearance-none bg-no-repeat cursor-pointer pr-7;
         background-image: linear-gradient(45deg, transparent 50%, currentColor 0), linear-gradient(135deg, currentColor 50%, transparent 0);
-        background-position: calc(100% - 16px) calc(1px + 50%), calc(100% - 12px) calc(1px + 50%);
-        background-size: 4px 4px, 4px 4px;
+        background-position: calc(100% - 18px) calc(1px + 50%), calc(100% - 12px) calc(1px + 50%);
+        background-size: 6px 6px, 6px 6px;
         background-repeat: no-repeat;
     }
 
@@ -199,10 +213,7 @@
         .sb-input,
         .sb-select,
         .sb-textarea {
-            @apply bg-light border-dark text-on-light placeholder-on-light placeholder-opacity-50;
-        }
-        .sb-checkbox {
-            @apply bg-light border-dark;
+            @apply text-on-light placeholder-on-light placeholder-opacity-75;
         }
         .sb-component-button-primary,
         .sb-component-social-primary {
@@ -221,10 +232,7 @@
         .sb-input,
         .sb-select,
         .sb-textarea {
-            @apply bg-light border-dark text-on-light placeholder-on-light placeholder-opacity-50;
-        }
-        .sb-checkbox {
-            @apply bg-light border-dark;
+            @apply text-primary placeholder-primary placeholder-opacity-75;
         }
         .sb-component-button-primary,
         .sb-component-social-primary {
@@ -246,10 +254,7 @@
         .sb-input,
         .sb-select,
         .sb-textarea {
-            @apply bg-light border-transparent text-on-light placeholder-on-light placeholder-opacity-50;
-        }
-        .sb-checkbox {
-            @apply bg-light border-transparent;
+            @apply text-on-dark placeholder-on-dark placeholder-opacity-75;
         }
         .sb-component-button-primary,
         .sb-component-social-primary {
@@ -271,10 +276,7 @@
         .sb-input,
         .sb-select,
         .sb-textarea {
-            @apply bg-light border-transparent text-on-light placeholder-on-light placeholder-opacity-50;
-        }
-        .sb-checkbox {
-            @apply bg-light border-transparent;
+            @apply text-primary placeholder-primary placeholder-opacity-75;
         }
         .sb-component-button-primary,
         .sb-component-social-primary {
@@ -296,10 +298,7 @@
         .sb-input,
         .sb-select,
         .sb-textarea {
-            @apply bg-light border-transparent text-on-light placeholder-on-light placeholder-opacity-50;
-        }
-        .sb-checkbox {
-            @apply bg-light border-transparent;
+            @apply text-on-primary placeholder-on-primary placeholder-opacity-75;
         }
         .sb-component-button-primary,
         .sb-component-social-primary {
@@ -324,10 +323,7 @@
         .sb-input,
         .sb-select,
         .sb-textarea {
-            @apply bg-light border-transparent text-on-light placeholder-on-light placeholder-opacity-50;
-        }
-        .sb-checkbox {
-            @apply bg-light border-transparent;
+            @apply text-on-secondary placeholder-on-secondary placeholder-opacity-75;
         }
         .sb-component-button-primary,
         .sb-component-social-primary {
@@ -349,10 +345,7 @@
         .sb-input,
         .sb-select,
         .sb-textarea {
-            @apply bg-light border-transparent text-on-light placeholder-on-light placeholder-opacity-50;
-        }
-        .sb-checkbox {
-            @apply bg-light border-transparent;
+            @apply text-primary placeholder-primary placeholder-opacity-75;
         }
         .sb-component-button-primary,
         .sb-component-social-primary {
@@ -374,10 +367,7 @@
         .sb-input,
         .sb-select,
         .sb-textarea {
-            @apply bg-light border-transparent text-on-light placeholder-on-light placeholder-opacity-50;
-        }
-        .sb-checkbox {
-            @apply bg-light border-transparent;
+            @apply text-on-complementary placeholder-on-complementary placeholder-opacity-75;
         }
         .sb-component-button-primary,
         .sb-component-social-primary {

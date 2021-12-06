@@ -10,8 +10,14 @@ import FormBlock from '../../molecules/FormBlock';
 export default function ContactSection(props) {
     const cssId = props.elementId || null;
     const colors = props.colors || 'colors-a';
+    const bgSize = props.backgroundSize || 'full';
     const sectionStyles = props.styles?.self || {};
-    const sectionBorderWidth = sectionStyles.borderWidth ? sectionStyles.borderWidth : 0;
+    const sectionWidth = sectionStyles.width || 'wide';
+    const sectionHeight = sectionStyles.height || 'auto';
+    const sectionPadding = sectionStyles.padding || 'py-12 px-4';
+    const sectionFlexDirection = sectionStyles.flexDirection || 'row';
+    const sectionJustifyContent = sectionStyles.justifyContent || 'center';
+    const sectionAlignItems = sectionStyles.alignItems || 'center';
     return (
         <div
             id={cssId}
@@ -20,44 +26,70 @@ export default function ContactSection(props) {
                 'sb-component',
                 'sb-component-section',
                 'sb-component-contact-section',
-                colors,
-                'flex',
-                'flex-col',
-                'justify-center',
-                sectionStyles.height ? mapMinHeightStyles(sectionStyles.height) : null,
-                sectionStyles.margin,
-                sectionStyles.padding,
-                sectionStyles.borderColor,
-                sectionStyles.borderRadius ? mapStyles({ borderRadius: sectionStyles.borderRadius }) : null,
-                sectionStyles.borderStyle ? mapStyles({ borderStyle: sectionStyles.borderStyle }) : null
+                bgSize === 'inset' ? 'flex': null,
+                bgSize === 'inset' ? mapStyles({ justifyContent: sectionJustifyContent }) : null,
+                sectionStyles.margin
             )}
-            style={{
-                borderWidth: `${sectionBorderWidth}px`
-            }}
         >
-            <div className={classNames('flex', 'w-full', sectionStyles.justifyContent ? mapStyles({ justifyContent: sectionStyles.justifyContent }) : null)}>
-                <div className={classNames('w-full', sectionStyles.width ? mapMaxWidthStyles(sectionStyles.width) : null)}>
+            <div
+                className={classNames(
+                    colors,
+                    'flex',
+                    'flex-col',
+                    'justify-center',
+                    bgSize === 'inset' ? 'w-full': null,
+                    bgSize === 'inset' ? mapMaxWidthStyles(sectionWidth) : null,
+                    mapMinHeightStyles(sectionHeight),
+                    sectionPadding,
+                    sectionStyles.borderColor,
+                    sectionStyles.borderStyle ? mapStyles({ borderStyle: sectionStyles.borderStyle }) : 'border-none',
+                    sectionStyles.borderRadius ? mapStyles({ borderRadius: sectionStyles.borderRadius }) : null,
+                    sectionStyles.boxShadow ? mapStyles({ boxShadow: sectionStyles.boxShadow }) : null
+                )}
+                style={{
+                    borderWidth: sectionStyles.borderWidth ? `${sectionStyles.borderWidth}px` : null
+                }}
+            >
+                <div
+                    className={classNames(
+                        'w-full',
+                        bgSize === 'full' ? 'flex': null,
+                        bgSize === 'full' ? mapStyles({ justifyContent: sectionJustifyContent }) : null
+                    )}
+                >
                     <div
                         className={classNames(
-                            'flex',
-                            '-mx-4',
-                            sectionStyles.flexDirection ? mapFlexDirectionStyles(sectionStyles.flexDirection) : null,
-                            sectionStyles.alignItems ? mapStyles({ alignItems: sectionStyles.alignItems }) : null
+                            'w-full',
+                            bgSize === 'full' ? mapMaxWidthStyles(sectionWidth) : null
                         )}
                     >
-                        <div className="my-3 flex-1 px-4 w-full">
-                            {contactBody(props)}
-                            {props.form && (
-                                <div className={classNames({ 'mt-8': props.title || props.text })} data-sb-field-path=".form">
-                                    <FormBlock {...props.form} />
+                        <div
+                            className={classNames(
+                                'flex',
+                                mapFlexDirectionStyles(sectionFlexDirection),
+                                mapStyles({ alignItems: sectionAlignItems }),
+                                'space-y-8',
+                                {
+                                    'lg:space-y-0 lg:space-x-8': sectionFlexDirection === 'row',
+                                    'space-y-reverse lg:space-y-0 lg:space-x-8 lg:space-x-reverse': sectionFlexDirection === 'row-reverse',
+                                    'space-y-reverse': sectionFlexDirection === 'col-reverse'
+                                }
+                            )}
+                        >
+                            <div className="flex-1 w-full">
+                                {contactBody(props)}
+                                {props.form && (
+                                    <div className={classNames({ 'mt-12': props.title || props.text })} data-sb-field-path=".form">
+                                        <FormBlock {...props.form} />
+                                    </div>
+                                )}
+                            </div>
+                            {props.media && (
+                                <div className="flex-1 w-full">
+                                    <div data-sb-field-path=".media">{contactMedia(props.media)}</div>
                                 </div>
                             )}
                         </div>
-                        {props.media && (
-                            <div className="my-3 flex-1 px-4 w-full">
-                                <div data-sb-field-path=".media">{contactMedia(props.media)}</div>
-                            </div>
-                        )}
                     </div>
                 </div>
             </div>
@@ -80,7 +112,7 @@ function contactMedia(media) {
 function contactBody(props) {
     const styles = props.styles || {};
     return (
-        <div>
+        <>
             {props.title && (
                 <h2 className={classNames(styles.title ? mapStyles(styles.title) : null)} data-sb-field-path=".title">
                     {props.title}
@@ -95,7 +127,7 @@ function contactBody(props) {
                     {props.text}
                 </Markdown>
             )}
-        </div>
+        </>
     );
 }
 

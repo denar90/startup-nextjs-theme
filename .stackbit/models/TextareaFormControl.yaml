@@ -15,6 +15,10 @@ fields:
     name: label
     label: Label
     default: Description
+  - type: boolean
+    name: hideLabel
+    label: Hide label
+    default: false
   - type: string
     name: placeholder
     label: Placeholder text

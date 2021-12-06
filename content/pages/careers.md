@@ -3,7 +3,7 @@ title: Careers
 layout: PageLayout
 sections:
   - elementId: ''
-    colors: colors-f
+    colors: colors-a
     title: We’re growing fast
     subtitle: You should join us.
     media:
@@ -37,9 +37,9 @@ sections:
         justifyContent: flex-start
     type: HeroSection
   - elementId: ''
-    colors: colors-a
+    colors: colors-h
     quote: >-
-      ## Being part of this team has been incredible. We’ve fill each other’s gaps, and we go to lunch together :)
+      ## Being part of this team has been incredible. We’ve fill each other’s gaps, and we go to lunch together
     name: Carla Rogers
     title: Someone from the team
     styles:
@@ -66,8 +66,17 @@ sections:
     type: QuoteSection
   - elementId: ''
     colors: colors-a
-    text: |
-      ![carrers](/images/careers.jpg)
+    images:
+      - type: ImageBlock
+        url: /images/careers.jpg
+        altText: People in the meeting room
+      - type: ImageBlock
+        url: /images/careers.jpg
+        altText: People in the meeting room
+    spacing: 3
+    columns: 2
+    aspectRatio: '1:1'
+    imageSizePx: 400
     styles:
       self:
         height: auto
@@ -87,9 +96,7 @@ sections:
         textAlign: center
       subtitle:
         textAlign: center
-      text:
-        textAlign: center
-    type: TextSection
+    type: MediaGallerySection
   - colors: colors-a
     elementId: ''
     title: Convinced? check out these open roles
@@ -211,6 +218,7 @@ sections:
     type: FeaturedItemsSection
   - elementId: contact-form
     colors: colors-f
+    backgroundSize: inset
     title: Not seeing the right role? Contact us
     text: We might have more roles soon, and we’ll contact you if we think there might be a good match
     form:
@@ -220,51 +228,59 @@ sections:
       destination: ''
       fields:
         - type: TextFormControl
-          name: name
-          label: Name
-          placeholder: Your name
-          isRequired: true
+          name: first-name
+          label: Your first name
+          hideLabel: true
+          placeholder: First name
+          isRequired: false
+          width: 1/2
+        - type: TextFormControl
+          name: last-name
+          label: Your last name
+          hideLabel: true
+          placeholder: Last name
+          isRequired: false
           width: 1/2
         - type: EmailFormControl
           name: email
-          label: Email
-          placeholder: Your email
+          label: Your email
+          hideLabel: true
+          placeholder: Email
           isRequired: true
-          width: 1/2
+          width: full
         - type: TextFormControl
-          name: home-address
-          label: Home address
-          placeholder: Your home address
-          isRequired: true
+          name: address
+          label: Your address
+          hideLabel: true
+          placeholder: Address
+          isRequired: false
           width: full
-        - type: CheckboxFormControl
-          name: updates
-          label: Sign me up to receive updates
-          width: full
-      submitLabel: Send Message
+      submitLabel: Submit
       styles:
         submitLabel:
           textAlign: center
     styles:
       self:
         height: auto
-        width: narrow
+        width: wide
         margin:
           - mt-0
           - mb-0
-          - ml-0
-          - mr-0
+          - ml-4
+          - mr-4
         padding:
-          - pt-12
-          - pb-12
-          - pl-4
-          - pr-4
+          - pt-24
+          - pb-24
+          - pl-12
+          - pr-12
         alignItems: center
         justifyContent: center
         flexDirection: row
+        borderRadius: xx-large
+        boxShadow: xx-large
       title:
-        textAlign: left
+        textAlign: center
       text:
-        textAlign: left
+        textAlign: center
     type: ContactSection
 ---
