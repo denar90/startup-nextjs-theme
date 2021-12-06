@@ -237,6 +237,9 @@
         .sb-card {
             @apply bg-dark bg-opacity-5;
         }
+        .sb-component-item-hover {
+            @apply hover:bg-primary hover:text-on-primary;
+        }
     }
     .colors-c {
         @apply bg-dark text-on-dark;
@@ -259,6 +262,9 @@
         .sb-card {
             @apply bg-light text-on-light;
         }
+        .sb-component-item-hover {
+            @apply hover:bg-light hover:text-on-light;
+        }
     }
     .colors-d {
         @apply bg-dark text-primary;
@@ -280,6 +286,9 @@
         }
         .sb-card {
             @apply bg-light;
+        }
+        .sb-component-item-hover {
+            @apply hover:bg-light hover:text-primary;
         }
     }
     .colors-e {
@@ -306,6 +315,9 @@
         .sb-card {
             @apply bg-light text-on-light;
         }
+        .sb-component-item-hover {
+            @apply hover:bg-light hover:text-on-light;
+        }
     }
     .colors-f {
         @apply bg-secondary text-on-secondary;
@@ -327,6 +339,9 @@
         }
         .sb-card {
             @apply bg-light text-on-light;
+        }
+        .sb-component-item-hover {
+            @apply hover:bg-primary hover:text-light;
         }
     }
     .colors-g {
@@ -350,6 +365,9 @@
         .sb-card {
             @apply bg-light;
         }
+        .sb-component-item-hover {
+            @apply hover:bg-primary hover:text-light;
+        }
     }
     .colors-h {
         @apply bg-complementary text-on-complementary;
@@ -371,6 +389,9 @@
         }
         .sb-card {
             @apply bg-light text-on-light;
+        }
+        .sb-component-item-hover {
+            @apply hover:bg-primary hover:text-light;
         }
     }
 }

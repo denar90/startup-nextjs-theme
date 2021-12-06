@@ -6,17 +6,20 @@ sections:
     elementId: homepage-hero-1
     colors: colors-a
     backgroundSize: full
-    title: 'Love where you work, because work loves you'
-    text: >
-      One platform, one community, getting to the bottom line of everything
-      employment.  Figure out your benefits, practice for interviews, get
-      mentored, help peers, get helped in return.
+    title: 'Love your work. Work loves you.'
+    subtitle: 'One platform, one comunity.'
     actions:
       - type: Button
-        label: Sign up
+        label: Get Started
         url: 'https://www.stackbit.com/'
         style: primary
         elementId: hero-main-button
+      - type: Link
+        label: Learn More
+        url: /
+        showIcon: true
+        icon: arrowRight
+        iconPosition: right
     media:
       type: ImageBlock
       url: /images/hero.png
@@ -109,6 +112,7 @@ sections:
           opacity: 100
       type: ImageBlock
   - colors: colors-h
+    subtitle: Trusted by
     elementId: ''
     images:
       - type: ImageBlock
@@ -152,7 +156,7 @@ sections:
           - mt-0
           - mb-0
         padding:
-          - pt-36
+          - pt-12
           - pb-24
           - pl-4
           - pr-4
@@ -167,7 +171,7 @@ sections:
         textAlign: center
     imageSizePx: 240
     type: MediaGallerySection
-  - colors: colors-h
+  - colors: colors-a
     elementId: ''
     title: Remote doesn’t mean alone. Here are so great features
     subtitle: >-
@@ -190,7 +194,15 @@ sections:
           type: ImageBlock
         styles:
           self:
-            textAlign: center
+            textAlign: left
+            borderColor: border-dark
+            borderWidth: 1
+            borderStyle: solid
+            padding:
+              - pt-4
+              - pl-4
+              - pb-6
+              - pr-4
       - type: FeaturedItem
         title: Smarter
         text: >
@@ -207,7 +219,15 @@ sections:
           type: ImageBlock
         styles:
           self:
-            textAlign: center
+            textAlign: left
+            borderColor: border-dark
+            borderWidth: 1
+            borderStyle: solid
+            padding:
+              - pt-4
+              - pl-4
+              - pb-6
+              - pr-4
       - type: FeaturedItem
         title: Focused
         text: >
@@ -224,9 +244,17 @@ sections:
           type: ImageBlock
         styles:
           self:
-            textAlign: center
+            textAlign: left
+            borderColor: border-dark
+            borderWidth: 1
+            borderStyle: solid
+            padding:
+              - pt-4
+              - pl-4
+              - pb-6
+              - pr-4
     columns: 3
-    enableHover: false
+    enableHover: true
     styles:
       self:
         height: auto
@@ -259,6 +287,18 @@ sections:
     text: >
       Share WIP, comment on each other’s work, approve what’s ready to go, ship
       together
+    actions:
+      - type: Button
+        label: Get Started
+        url: 'https://www.stackbit.com/'
+        style: primary
+        elementId: hero-main-button
+      - type: Link
+        label: Learn More
+        url: /
+        showIcon: true
+        icon: arrowRight
+        iconPosition: right
     media:
       type: ImageBlock
       url: /images/hero-1.png
@@ -296,6 +336,18 @@ sections:
     text: >
       Share WIP, comment on each other’s work, approve what’s ready to go, ship
       together
+    actions:
+      - type: Button
+        label: Get Started
+        url: 'https://www.stackbit.com/'
+        style: primary
+        elementId: hero-main-button
+      - type: Link
+        label: Learn More
+        url: /
+        showIcon: true
+        icon: arrowRight
+        iconPosition: right
     media:
       type: ImageBlock
       url: /images/hero-2.png
