@@ -10,8 +10,14 @@ import { Action, Badge } from '../../atoms';
 export default function HeroSection(props) {
     const cssId = props.elementId || null;
     const colors = props.colors || 'colors-a';
+    const bgSize = props.backgroundSize || 'full';
     const sectionStyles = props.styles?.self || {};
-    const sectionBorderWidth = sectionStyles.borderWidth ? sectionStyles.borderWidth : 0;
+    const sectionWidth = sectionStyles.width || 'wide';
+    const sectionHeight = sectionStyles.height || 'auto';
+    const sectionPadding = sectionStyles.padding || 'py-12 px-4';
+    const sectionFlexDirection = sectionStyles.flexDirection || 'row';
+    const sectionJustifyContent = sectionStyles.justifyContent || 'center';
+    const sectionAlignItems = sectionStyles.alignItems || 'center';
     return (
         <div
             id={cssId}
@@ -20,49 +26,64 @@ export default function HeroSection(props) {
                 'sb-component',
                 'sb-component-section',
                 'sb-component-hero-section',
-                colors,
-                'flex',
-                'flex-col',
-                'justify-center',
-                'relative',
-                sectionStyles.height ? mapMinHeightStyles(sectionStyles.height) : null,
-                sectionStyles.margin,
-                sectionStyles.padding,
-                sectionStyles.borderColor,
-                sectionStyles.borderRadius ? mapStyles({ borderRadius: sectionStyles.borderRadius }) : null,
-                sectionStyles.borderStyle ? mapStyles({ borderStyle: sectionStyles.borderStyle }) : null
+                bgSize === 'inset' ? 'flex': null,
+                bgSize === 'inset' ? mapStyles({ justifyContent: sectionJustifyContent }) : null,
+                sectionStyles.margin
             )}
-            style={{
-                borderWidth: `${sectionBorderWidth}px`
-            }}
         >
-            {props.backgroundImage && heroBackgroundImage(props.backgroundImage)}
             <div
                 className={classNames(
+                    colors,
                     'flex',
+                    'flex-col',
+                    'justify-center',
                     'relative',
-                    'w-full',
-                    sectionStyles.justifyContent ? mapStyles({ justifyContent: sectionStyles.justifyContent }) : null
+                    bgSize === 'inset' ? 'w-full': null,
+                    bgSize === 'inset' ? mapMaxWidthStyles(sectionWidth) : null,
+                    mapMinHeightStyles(sectionHeight),
+                    sectionPadding,
+                    sectionStyles.borderColor,
+                    sectionStyles.borderStyle ? mapStyles({ borderStyle: sectionStyles.borderStyle }) : 'border-none',
+                    sectionStyles.borderRadius ? mapStyles({ borderRadius: sectionStyles.borderRadius }) : null,
+                    sectionStyles.boxShadow ? mapStyles({ boxShadow: sectionStyles.boxShadow }) : null
                 )}
+                style={{
+                    borderWidth: sectionStyles.borderWidth ? `${sectionStyles.borderWidth}px` : null
+                }}
             >
-                <div className={classNames('w-full', sectionStyles.width ? mapMaxWidthStyles(sectionStyles.width) : null)}>
-                    <div
-                        className={classNames(
-                            'flex',
-                            '-mx-4',
-                            sectionStyles.flexDirection ? mapFlexDirectionStyles(sectionStyles.flexDirection) : null,
-                            sectionStyles.alignItems ? mapStyles({ alignItems: sectionStyles.alignItems }) : null
-                        )}
-                    >
-                        <div className="my-3 flex-1 px-4 w-full">
-                            {heroBody(props)}
-                            {heroActions(props)}
-                        </div>
-                        {props.media && (
-                            <div className="my-3 flex-1 px-4 w-full">
-                                <div data-sb-field-path=".media">{heroMedia(props.media)}</div>
+                {props.backgroundImage && heroBackgroundImage(props.backgroundImage)}
+                <div
+                    className={classNames(
+                        'relative',
+                        'w-full',
+                        bgSize === 'full' ? 'flex': null,
+                        bgSize === 'full' ? mapStyles({ justifyContent: sectionJustifyContent }) : null
+                    )}
+                >
+                    <div className={classNames('w-full', mapMaxWidthStyles(sectionWidth))}>
+                        <div
+                            className={classNames(
+                                'flex',
+                                mapFlexDirectionStyles(sectionFlexDirection),
+                                mapStyles({ alignItems: sectionAlignItems }),
+                                'space-y-8',
+                                {
+                                    'lg:space-y-0 lg:space-x-8': sectionFlexDirection === 'row',
+                                    'space-y-reverse lg:space-y-0 lg:space-x-8 lg:space-x-reverse': sectionFlexDirection === 'row-reverse',
+                                    'space-y-reverse': sectionFlexDirection === 'col-reverse'
+                                }
+                            )}
+                        >
+                            <div className="flex-1 w-full">
+                                {heroBody(props)}
+                                {heroActions(props)}
                             </div>
-                        )}
+                            {props.media && (
+                                <div className="flex-1 w-full">
+                                    <div data-sb-field-path=".media">{heroMedia(props.media)}</div>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -157,8 +178,6 @@ function heroActions(props) {
 
 function mapMinHeightStyles(height) {
     switch (height) {
-        case 'auto':
-            return 'min-h-0';
         case 'screen':
             return 'min-h-screen';
     }

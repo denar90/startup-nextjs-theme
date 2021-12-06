@@ -56,6 +56,16 @@ const TAILWIND_MAP = {
         dotted: 'border-dotted',
         double: 'border-double'
     },
+    boxShadow: {
+        'none': 'shadow-none',
+        'x-small': 'shadow-sm',
+        small: 'shadow',
+        medium: 'shadow-md',
+        large: 'shadow-lg',
+        'x-large': 'shadow-xl',
+        'xx-large': 'shadow-2xl',
+        'inner': 'shadow-inner'
+    },
     margin: function (value) {
         // for tailwind margins - ['twt0:16', 'twb0:16'], the value will be array ['mt-0', 'mb-4']
         if (Array.isArray(value)) {

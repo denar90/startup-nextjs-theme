@@ -15,6 +15,16 @@ fieldGroups:
 fields:
   - name: colors
     default: colors-f
+  - type: enum
+    name: backgroundSize
+    group: styles
+    label: Background size
+    options:
+      - label: Full
+        value: full
+      - label: Inset
+        value: inset
+    default: full
   - type: string
     name: title
     label: Title
@@ -77,8 +87,8 @@ fields:
       self:
         height: ['auto', 'screen']
         width: ['narrow', 'wide', 'full']
-        margin: ['tw0:36']
-        padding: ['tw4:36']
+        margin: ['tw0:64']
+        padding: ['tw0:64']
         alignItems: ['flex-start', 'flex-end', 'center']
         justifyContent: ['flex-start', 'flex-end', 'center']
         flexDirection: ['row', 'row-reverse', 'col', 'col-reverse']
@@ -98,6 +108,7 @@ fields:
           - value: 'border-complementary'
             label: 'Complementary color'
             color: '$complementary'
+        boxShadow: '*'
       title:
         fontWeight: ['400', '700']
         fontStyle: ['normal', 'italic']
@@ -123,6 +134,7 @@ fields:
         borderWidth: 0
         borderStyle: none
         borderColor: border-dark
+        boxShadow: none
       title:
         textAlign: left
       subtitle:

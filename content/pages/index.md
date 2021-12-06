@@ -5,6 +5,7 @@ sections:
   - type: HeroSection
     elementId: homepage-hero-1
     colors: colors-a
+    backgroundSize: full
     title: 'Love where you work, because work loves you'
     text: >
       One platform, one community, getting to the bottom line of everything
@@ -38,10 +39,6 @@ sections:
         alignItems: center
         justifyContent: center
         flexDirection: row
-        borderRadius: none
-        borderWidth: 0
-        borderStyle: none
-        borderColor: border-dark
       title:
         textAlign: left
       subtitle:
@@ -52,6 +49,7 @@ sections:
         justifyContent: flex-start
   - elementId: ''
     colors: colors-f
+    backgroundSize: inset
     title: Where did everyone go?
     text: >
       Learn how top tech companies have learned working remote using our
@@ -80,16 +78,18 @@ sections:
         margin:
           - mt-20
           - mb-20
-          - ml-20
-          - mr-20
+          - ml-4
+          - mr-4
         padding:
-          - pt-28
-          - pb-28
-          - pl-4
-          - pr-4
+          - pt-16
+          - pb-16
+          - pl-12
+          - pr-12
         alignItems: center
         justifyContent: center
         flexDirection: row
+        borderRadius: xx-large
+        boxShadow: xx-large
       title:
         textAlign: left
       subtitle:
