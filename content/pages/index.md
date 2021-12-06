@@ -18,7 +18,7 @@ sections:
         elementId: hero-main-button
     media:
       type: ImageBlock
-      url: /images/hero-1.png
+      url: /images/hero.png
       altText: Image alt text
       caption: Image caption
     styles:
@@ -261,7 +261,7 @@ sections:
       together
     media:
       type: ImageBlock
-      url: /images/Image-on-the-right.svg
+      url: /images/hero-1.png
       altText: Hero section image
     styles:
       self:
@@ -298,7 +298,7 @@ sections:
       together
     media:
       type: ImageBlock
-      url: /images/Image-on-the-left.svg
+      url: /images/hero-2.png
       altText: Hero section image
     styles:
       self:
@@ -389,7 +389,7 @@ sections:
     styles:
       self:
         height: auto
-        width: narrow
+        width: wide
         margin:
           - mt-0
           - mb-0
