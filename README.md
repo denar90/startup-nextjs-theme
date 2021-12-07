@@ -1,6 +1,6 @@
 # A New Stackbit Project
 
-Welcome to your new project created with Stackbit!
+Welcome to your new project created with Stackbit.
 
 Here are a few useful tips & links:
 
@@ -21,4 +21,4 @@ Here are a few useful tips & links:
 
 ## Do your thing
 
-Time for you to build your website the way you want it, including modifying this README 😉. 
+Time for you to build your website the way you want it, including modifying this README 😉
