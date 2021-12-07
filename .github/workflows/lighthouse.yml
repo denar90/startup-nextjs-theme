@@ -18,7 +18,7 @@ jobs:
         uses: jakepartusch/wait-for-netlify-action@v1
         id: netlify
         with:
-          site_name: 'startup-nextjs-theme'
+          site_name: 'sharp-hodgkin-22b4ec'
       - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v8
         with:
